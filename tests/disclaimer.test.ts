@@ -12,13 +12,25 @@ import {
 
 const root = resolve(__dirname, '..');
 
+/** Code-point join so this file keeps no readable personal-name fragment. */
+const u = (...codes: number[]) => String.fromCharCode(...codes);
+
 function blockedNeedles(): string[] {
   return [
-    ['chris', 'johnson'].join(' '),
-    ['model', 'user', '123'].join(''),
-    ['cjtx', 'audit'].join(''),
-    ['CJ', ' CPA'].join(''),
-    ['CJ', ' CPAs'].join(''),
+    `${u(99, 104, 114, 105, 115)} ${u(106, 111, 104, 110, 115, 111, 110)}`,
+    `${u(109, 111, 100, 101, 108)}${u(117, 115, 101, 114)}${u(49, 50, 51)}`,
+    `${u(99, 106, 116, 120)}${u(97, 117, 100, 105, 116)}`,
+    `${u(67, 74)} ${u(67, 80, 65)}`,
+    `${u(67, 74)} ${u(67, 80, 65, 115)}`,
+  ];
+}
+
+function blockedFragments(): string[] {
+  return [
+    u(99, 106, 116, 120),
+    u(109, 111, 100, 101, 108, 117, 115, 101, 114),
+    u(99, 104, 114, 105, 115),
+    u(106, 111, 104, 110, 115, 111, 110),
   ];
 }
 
@@ -95,6 +107,18 @@ describe('blocked personal-name strings', () => {
       .map((line) => line.trim())
       .filter((line) => line && !line.startsWith('#'));
     const hits = grepOrEmpty(['-rniIE', pattern, '--', ...paths]);
+    expect(hits, hits).toBe('');
+  });
+
+  it('leave no readable fragments in allowlisted export paths', () => {
+    const paths = readFileSync(resolve(root, '.public-release/allowlist.txt'), 'utf8')
+      .split('\n')
+      .map((line) => line.trim())
+      .filter((line) => line && !line.startsWith('#'));
+    const fragmentPattern = blockedFragments()
+      .map((n) => n.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+      .join('|');
+    const hits = grepOrEmpty(['-rniIE', fragmentPattern, '--', ...paths]);
     expect(hits, hits).toBe('');
   });
 

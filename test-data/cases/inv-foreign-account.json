@@ -1,0 +1,24 @@
+{
+  "id": "inv-foreign-account",
+  "category": "investments",
+  "description": "Small interest plus a foreign financial account — Schedule B Part III yes.",
+  "derivation": "Schedule B Part III: a foreign-account “yes” requires Schedule B even under the $1,500 threshold, and FBAR / Form 8938 may also be required (not prepared).",
+  "input": {
+    "interest": [
+      {
+        "payer": "EU Bank",
+        "taxable": 200
+      }
+    ],
+    "foreignAccount": true
+  },
+  "expected": {
+    "scheduleB": {
+      "4": 200,
+      "7a": 1
+    },
+    "warningsIncludes": [
+      "FinCEN 114"
+    ]
+  }
+}

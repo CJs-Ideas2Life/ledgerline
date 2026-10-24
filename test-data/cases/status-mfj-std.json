@@ -1,0 +1,16 @@
+{
+  "id": "status-mfj-std",
+  "category": "filing-status",
+  "description": "Married filing jointly, no income.",
+  "derivation": "Form 1040 (2025) standard deduction MFJ $31,500. TI $0, tax $0.",
+  "input": {
+    "filingStatus": "mfj"
+  },
+  "expected": {
+    "standardDeduction": 31500,
+    "form1040": {
+      "15": 0,
+      "16": 0
+    }
+  }
+}

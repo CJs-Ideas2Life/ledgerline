@@ -1,0 +1,34 @@
+{
+  "id": "life-mfj-one-senior",
+  "category": "seniors-dependent",
+  "description": "MFJ, only taxpayer is 65+, MAGI $90,000 — one $6,000 senior deduction, extra $1,600 std.",
+  "derivation": "Std 31,500 + 1,600 = 33,100. Senior $6,000 (MAGI < 150,000). TI = 90,000 − 33,100 − 6,000 = 50,900.",
+  "input": {
+    "filingStatus": "mfj",
+    "taxpayer": {
+      "bornBefore1961": true,
+      "hasValidSSN": true
+    },
+    "spouse": {
+      "hasValidSSN": true
+    },
+    "w2s": [
+      {
+        "wages": 90000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 90000,
+        "socialSecurityTax": 5580,
+        "medicareWages": 90000,
+        "medicareTax": 1305
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 33100,
+    "form1040": {
+      "15": 50900,
+      "16": 5634,
+      "13b": 6000
+    }
+  }
+}

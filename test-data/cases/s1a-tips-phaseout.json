@@ -1,0 +1,24 @@
+{
+  "id": "s1a-tips-phaseout",
+  "category": "schedule-1a",
+  "description": "Qualified tips $10,000, MAGI $152,400 — $100-per-$1,000 floor phase-out.",
+  "derivation": "Sch. 1-A lines 10–13: excess $2,400; floor(2,400/1,000) = 2 × $100 = $200; deduction $9,800. (Tips use the floor; car-loan interest uses the ceiling.)",
+  "input": {
+    "w2s": [
+      {
+        "wages": 152400,
+        "federalWithholding": 28000,
+        "socialSecurityWages": 152400,
+        "medicareWages": 152400,
+        "medicareTax": 2210,
+        "qualifiedTips": 10000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "11": 2,
+      "13": 9800
+    }
+  }
+}

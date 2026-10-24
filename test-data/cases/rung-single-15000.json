@@ -1,0 +1,24 @@
+{
+  "id": "rung-single-15000",
+  "category": "wages",
+  "description": "Single W-2 of $15,000 — standard deduction wipes taxable income.",
+  "derivation": "Std $15,750 ≥ wages, TI 0, tax 0. Form 1040 line 15.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 15000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 15000,
+        "socialSecurityTax": 930,
+        "medicareWages": 15000,
+        "medicareTax": 218
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 0,
+      "16": 0
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "schd-loss-limit-mfs",
+  "category": "schedule-d",
+  "description": "MFS net short-term loss of $5,000 — $1,500 allowed.",
+  "derivation": "§ 1211(b) MFS cap $1,500. Carryover ST $3,500.",
+  "input": {
+    "filingStatus": "mfs",
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 5000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ],
+    "capitalGains": [
+      {
+        "description": "Loss",
+        "term": "short",
+        "proceeds": 0,
+        "cost": 5000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "7": -1500
+    },
+    "scheduleD": {
+      "21": -1500
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "s1a-overtime",
+  "category": "schedule-1a",
+  "description": "Single filer with $20,000 of qualified overtime — capped at $12,500.",
+  "derivation": "Sch. 1-A line 15: smaller of qualified OT or $12,500 ($25,000 MFJ). MAGI $50,000, no phase-out. Deduction $12,500.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 5000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725,
+        "qualifiedOvertime": 20000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "15": 12500,
+      "21": 12500
+    }
+  }
+}

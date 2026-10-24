@@ -1,0 +1,19 @@
+{
+  "id": "g10-qbi-2025-range",
+  "category": "qbi",
+  "description": "Single QTB, no W-2 wages, taxable income about $259k before QBI — 2025 phase-in has ended, so the wage limit is fully applied (G10).",
+  "derivation": "Profit $290,000. SE deduction ≈ $14,802. AGI ≈ $275,198. TI before QBI ≈ $259,448, which is above the 2025 end of $247,300 and would still be inside a leaked 2026 $75,000 range (ends $272,300). With $0 W-2 wages the 2025 full limit zeros the deduction. A 2026 range would have left a phase-in remainder.",
+  "input": {
+    "businesses": [
+      {
+        "name": "Consult",
+        "grossReceipts": 290000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "13a": 0
+    }
+  }
+}

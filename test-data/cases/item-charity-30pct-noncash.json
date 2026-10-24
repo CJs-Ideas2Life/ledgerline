@@ -1,0 +1,27 @@
+{
+  "id": "item-charity-30pct-noncash",
+  "category": "itemized",
+  "description": "Non-cash gifts $20,000 on AGI $50,000 — 30% AGI limit.",
+  "derivation": "Pub. 526: capital-gain / non-cash property to a public charity is capped at 30% of AGI = $15,000. Carryover $5,000.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ],
+    "itemized": {
+      "charityNonCash": 20000
+    },
+    "forceItemize": true
+  },
+  "expected": {
+    "scheduleA": {
+      "12": 15000
+    },
+    "charityCarryoverToNextYear": 5000
+  }
+}

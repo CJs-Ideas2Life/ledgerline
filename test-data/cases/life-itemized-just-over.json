@@ -1,0 +1,30 @@
+{
+  "id": "life-itemized-just-over",
+  "category": "itemized",
+  "description": "Single, $80,000 wages, itemized just $40 over the $15,750 standard deduction.",
+  "derivation": "Mortgage $10,000 + SALT $5,790 = $15,790 > 15,750. Uses itemized. TI 80,000 − 15,790 = 64,210.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 80000,
+        "federalWithholding": 9000,
+        "socialSecurityWages": 80000,
+        "socialSecurityTax": 4960,
+        "medicareWages": 80000,
+        "medicareTax": 1160
+      }
+    ],
+    "itemized": {
+      "mortgageInterest1098": 10000,
+      "stateLocalIncomeOrSalesTax": 5790
+    }
+  },
+  "expected": {
+    "usesItemized": true,
+    "itemizedDeduction": 15790,
+    "form1040": {
+      "15": 64210,
+      "16": 9044
+    }
+  }
+}

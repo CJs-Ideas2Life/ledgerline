@@ -1,0 +1,32 @@
+{
+  "id": "bound-10-12-hoh-minus",
+  "category": "boundaries",
+  "description": "HOH taxable income 16999 at the 10/12 edge (minus).",
+  "derivation": "Std 23,625. TI 16999. Tax $1698. RP 2024-40 § 3.01 Table 3.",
+  "input": {
+    "filingStatus": "hoh",
+    "dependents": [
+      {
+        "firstName": "Pat",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 40624,
+        "federalWithholding": 0,
+        "socialSecurityWages": 40624,
+        "socialSecurityTax": 2519,
+        "medicareWages": 40624,
+        "medicareTax": 589
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 16999,
+      "16": 1698
+    }
+  }
+}

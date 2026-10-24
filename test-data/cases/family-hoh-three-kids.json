@@ -1,0 +1,43 @@
+{
+  "id": "family-hoh-three-kids",
+  "category": "family",
+  "description": "Head of household, three young children, $45,000 wages, $2,000 withheld.",
+  "derivation": "Std $23,625. TI $21,375. CTC $6,600 before tax-limit. EIC table (3 children): $45,000–$45,050 midpoint $45,025 → $8,046 − 21.06% × $21,675 = $8,046 − $4,565 = $3,481.",
+  "input": {
+    "filingStatus": "hoh",
+    "w2s": [
+      {
+        "wages": 45000,
+        "federalWithholding": 2000,
+        "socialSecurityWages": 45000,
+        "socialSecurityTax": 2790,
+        "medicareWages": 45000,
+        "medicareTax": 653
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "B",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "C",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 21375,
+      "27a": 3481
+    },
+    "standardDeduction": 23625
+  }
+}

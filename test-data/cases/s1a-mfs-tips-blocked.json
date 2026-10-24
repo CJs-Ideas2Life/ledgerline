@@ -1,0 +1,27 @@
+{
+  "id": "s1a-mfs-tips-blocked",
+  "category": "schedule-1a",
+  "description": "MFS with qualified tips and overtime — both require a joint return.",
+  "derivation": "Sch. 1-A Parts II and III cautions: if married, you must file jointly. Car-loan interest (Part IV) remains available.",
+  "input": {
+    "filingStatus": "mfs",
+    "w2s": [
+      {
+        "wages": 40000,
+        "socialSecurityWages": 40000,
+        "medicareWages": 40000,
+        "medicareTax": 580,
+        "qualifiedTips": 5000,
+        "qualifiedOvertime": 2000
+      }
+    ],
+    "carLoanInterest": 1000
+  },
+  "expected": {
+    "schedule1A": {
+      "13": 0,
+      "21": 0,
+      "30": 1000
+    }
+  }
+}

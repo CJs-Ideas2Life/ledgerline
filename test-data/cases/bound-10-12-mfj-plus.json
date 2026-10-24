@@ -1,0 +1,25 @@
+{
+  "id": "bound-10-12-mfj-plus",
+  "category": "boundaries",
+  "description": "MFJ taxable income 23851 at the 10-12 edge (plus).",
+  "derivation": "Wages 55351 − 31,500 = 23851. Tax $2388. RP 2024-40 § 3.01 Table 2.",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 55351,
+        "federalWithholding": 0,
+        "socialSecurityWages": 55351,
+        "socialSecurityTax": 3432,
+        "medicareWages": 55351,
+        "medicareTax": 803
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 23851,
+      "16": 2388
+    }
+  }
+}

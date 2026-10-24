@@ -1,0 +1,1297 @@
+{
+  "_meta": {
+    "title": "Ledgerline TY2025 Form 1040 annual parameters",
+    "tax_year": 2025,
+    "prepared": "2026-10-22",
+    "law_through": "P.L. 119-21 (OBBBA, 7/4/2025) and IRS final 2025 forms/instructions",
+    "convention": "verified=true means the value was read from the cited source_url in this research pass; verified=false = UNVERIFIED"
+  },
+  "parameters": {
+    "brackets.mfj_qss": {
+      "value": {
+        "rates": [
+          0.1,
+          0.12,
+          0.22,
+          0.24,
+          0.32,
+          0.35,
+          0.37
+        ],
+        "upper_bounds": [
+          23850,
+          96950,
+          206700,
+          394600,
+          501050,
+          751600,
+          null
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual, \u00a71(f)(3) C-CPI-U, base yr per \u00a71(j)(3) (OBBBA \u00a770101: from 2026 only 10/12% tops get extra-year bump)",
+      "sunset": "Rates permanent per OBBBA \u00a770101 (no 2025 change)",
+      "verified": true,
+      "citation": "IRC \u00a71(j)(2); Rev. Proc. 2024-40 \u00a73.01 Tables 1-4",
+      "also_confirmed_in": [
+        "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025"
+      ]
+    },
+    "brackets.hoh": {
+      "value": {
+        "rates": [
+          0.1,
+          0.12,
+          0.22,
+          0.24,
+          0.32,
+          0.35,
+          0.37
+        ],
+        "upper_bounds": [
+          17000,
+          64850,
+          103350,
+          197300,
+          250500,
+          626350,
+          null
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual, \u00a71(f)(3) C-CPI-U, base yr per \u00a71(j)(3) (OBBBA \u00a770101: from 2026 only 10/12% tops get extra-year bump)",
+      "sunset": "Rates permanent per OBBBA \u00a770101 (no 2025 change)",
+      "verified": true,
+      "citation": "IRC \u00a71(j)(2); Rev. Proc. 2024-40 \u00a73.01 Tables 1-4"
+    },
+    "brackets.single": {
+      "value": {
+        "rates": [
+          0.1,
+          0.12,
+          0.22,
+          0.24,
+          0.32,
+          0.35,
+          0.37
+        ],
+        "upper_bounds": [
+          11925,
+          48475,
+          103350,
+          197300,
+          250525,
+          626350,
+          null
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual, \u00a71(f)(3) C-CPI-U, base yr per \u00a71(j)(3) (OBBBA \u00a770101: from 2026 only 10/12% tops get extra-year bump)",
+      "sunset": "Rates permanent per OBBBA \u00a770101 (no 2025 change)",
+      "verified": true,
+      "citation": "IRC \u00a71(j)(2); Rev. Proc. 2024-40 \u00a73.01 Tables 1-4",
+      "also_confirmed_in": [
+        "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025"
+      ]
+    },
+    "brackets.mfs": {
+      "value": {
+        "rates": [
+          0.1,
+          0.12,
+          0.22,
+          0.24,
+          0.32,
+          0.35,
+          0.37
+        ],
+        "upper_bounds": [
+          11925,
+          48475,
+          103350,
+          197300,
+          250525,
+          375800,
+          null
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual, \u00a71(f)(3) C-CPI-U, base yr per \u00a71(j)(3) (OBBBA \u00a770101: from 2026 only 10/12% tops get extra-year bump)",
+      "sunset": "Rates permanent per OBBBA \u00a770101 (no 2025 change)",
+      "verified": true,
+      "citation": "IRC \u00a71(j)(2); Rev. Proc. 2024-40 \u00a73.01 Tables 1-4"
+    },
+    "brackets.estates_trusts": {
+      "value": {
+        "rates": [
+          0.1,
+          0.24,
+          0.35,
+          0.37
+        ],
+        "upper_bounds": [
+          3150,
+          11450,
+          15650,
+          null
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(j)(2)(E); Rev. Proc. 2024-40 Table 5"
+    },
+    "standard_deduction.basic": {
+      "value": {
+        "single": 15750,
+        "mfs": 15750,
+        "mfj": 31500,
+        "qss": 31500,
+        "hoh": 23625
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Statutory for 2025 (OBBBA \u00a770102 sets $15,750/$23,625 in \u00a763(c)(7)); indexed after 2025",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "IRC \u00a763(c)(7) as amended by P.L. 119-21 \u00a770102",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf"
+      ],
+      "note": "SUPERSEDES Rev. Proc. 2024-40 \u00a73.15 ($15,000/$30,000/$22,500). Use OBBBA figures."
+    },
+    "standard_deduction.rev_proc_2024_40_superseded": {
+      "value": {
+        "single": 15000,
+        "mfj": 30000,
+        "hoh": 22500
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "n/a",
+      "sunset": "Superseded by OBBBA for 2025",
+      "verified": true,
+      "citation": "Rev. Proc. 2024-40 \u00a73.15(1)",
+      "note": "DO NOT USE for 2025 returns; retained for audit trail / 2025 Form 1040-ES & W-4 era calculations."
+    },
+    "standard_deduction.additional_aged_blind": {
+      "value": {
+        "married_or_qss": 1600,
+        "unmarried_not_qss": 2000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a763(f); Rev. Proc. 2024-40 \u00a73.15(3)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf"
+      ],
+      "note": "Unchanged by OBBBA. Age test: born before Jan 2, 1961."
+    },
+    "standard_deduction.dependent": {
+      "value": {
+        "minimum": 1350,
+        "earned_income_plus": 450
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a763(c)(5); Rev. Proc. 2024-40 \u00a73.15(2)",
+      "note": "Greater of $1,350 or earned income + $450, not to exceed basic std deduction ($15,750 single per OBBBA)."
+    },
+    "kiddie_tax.unearned_income_threshold_unit": {
+      "value": 1350,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual (tracks \u00a763(c)(5)(A) dependent std deduction minimum)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(g)(4)(A)(ii)(I); Rev. Proc. 2024-40 \u00a73.02",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i8615.pdf"
+      ]
+    },
+    "kiddie_tax.form8615_threshold": {
+      "value": 2700,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i8615.pdf",
+      "indexing": "Annual (2 x the $1,350 Rev. Proc. amount: $1,350 \u00a763(c)(5)(A) offset + $1,350 taxed at child rate)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(g)(4)(A)(ii); Rev. Proc. 2024-40 \u00a73.02 ($1,350); Instructions for Form 8615 (2025) Who Must File (\"more than $2,700 of unearned income\")",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf"
+      ],
+      "note": "Form 8615 required if the child's unearned income is more than $2,700. Line 2 = $2,700 unless itemizing (then greater of $2,700 or $1,350 + directly connected itemized deductions)."
+    },
+    "kiddie_tax.form8814_election_range": {
+      "value": {
+        "gross_income_more_than": 1350,
+        "gross_income_less_than": 13500
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(g)(7); Rev. Proc. 2024-40 \u00a73.02"
+    },
+    "capital_gains.mfj_qss": {
+      "value": {
+        "zero_rate_max": 96700,
+        "fifteen_rate_max": 600050
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(h)(1), \u00a71(j)(5); Rev. Proc. 2024-40 \u00a73.03"
+    },
+    "capital_gains.mfs": {
+      "value": {
+        "zero_rate_max": 48350,
+        "fifteen_rate_max": 300000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(h)(1), \u00a71(j)(5); Rev. Proc. 2024-40 \u00a73.03"
+    },
+    "capital_gains.hoh": {
+      "value": {
+        "zero_rate_max": 64750,
+        "fifteen_rate_max": 566700
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(h)(1), \u00a71(j)(5); Rev. Proc. 2024-40 \u00a73.03"
+    },
+    "capital_gains.single": {
+      "value": {
+        "zero_rate_max": 48350,
+        "fifteen_rate_max": 533400
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(h)(1), \u00a71(j)(5); Rev. Proc. 2024-40 \u00a73.03"
+    },
+    "capital_gains.estates_trusts": {
+      "value": {
+        "zero_rate_max": 3250,
+        "fifteen_rate_max": 15900
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71(h)(1), \u00a71(j)(5); Rev. Proc. 2024-40 \u00a73.03"
+    },
+    "niit.threshold": {
+      "value": {
+        "mfj_qss": 250000,
+        "mfs": 125000,
+        "single_hoh": 200000,
+        "rate": 0.038
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf",
+      "indexing": "NOT indexed (statutory)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "IRC \u00a71411(b)",
+      "also_confirmed_in": [
+        "https://www.law.cornell.edu/uscode/text/26/1411"
+      ],
+      "note": "MAGI = 1040 line 11b (+2555 add-back)."
+    },
+    "additional_medicare.threshold": {
+      "value": {
+        "mfj": 250000,
+        "mfs": 125000,
+        "single_hoh_qss": 200000,
+        "rate": 0.009
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf",
+      "indexing": "NOT indexed (statutory)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "IRC \u00a73101(b)(2), \u00a71401(b)(2)",
+      "also_confirmed_in": [
+        "https://www.law.cornell.edu/uscode/text/26/3101"
+      ],
+      "note": "QSS uses $200,000 here but $250,000 for NIIT."
+    },
+    "social_security.wage_base": {
+      "value": 176100,
+      "source_url": "https://www.ssa.gov/oact/cola/cbb.html",
+      "indexing": "Annual SSA automatic adjustment, national average wage index (42 USC 430(b))",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "42 U.S.C. \u00a7430; IRC \u00a73121(a)(1), \u00a71402(b)(1); SSA Contribution and Benefit Base table (2025: $176,100); 2025 Schedule SE instructions",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040sse.pdf"
+      ],
+      "note": "Do not confuse with 2026 ($184,500) or 2027 ($192,300) shown on the same SSA page."
+    },
+    "self_employment.rates": {
+      "value": {
+        "oasdi": 0.124,
+        "hi": 0.029,
+        "net_earnings_factor": 0.9235,
+        "min_net_earnings": 400,
+        "church_employee_income_min": 108.28
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i1040sse.pdf",
+      "indexing": "Statutory",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71401, \u00a71402(a)(12), \u00a71402(b)(2), \u00a71402(j)(2)"
+    },
+    "self_employment.optional_method_max": {
+      "value": 7240,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i1040sse.pdf",
+      "indexing": "Annual (tied to SSA quarter of coverage)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71402(a)/(l)"
+    },
+    "mileage": {
+      "value": {
+        "business_cents": 70,
+        "medical_moving_cents": 21,
+        "charitable_cents": 14,
+        "depreciation_component_cents": 33
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-25-05.pdf",
+      "indexing": "Annual by IRS notice (charity 14c statutory \u00a7170(i), not indexed)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "Notice 2025-5",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040sc.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i1040sca.pdf"
+      ]
+    },
+    "amt.exemption": {
+      "value": {
+        "mfj_qss": 137000,
+        "single_hoh": 88100,
+        "mfs": 68500,
+        "estates_trusts": 30700
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a71(f)(3) base 2017",
+      "sunset": "TCJA amounts made permanent by OBBBA \u00a770107",
+      "verified": true,
+      "citation": "\u00a755(d)(1),(4); Rev. Proc. 2024-40 \u00a73.11",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i6251.pdf"
+      ],
+      "note": "CONFLICT: IR-2024-273 says $68,650 MFS. Use $68,500 (Rev. Proc. + Form 6251 instructions + internal consistency 626,350+4*68,500=900,350)."
+    },
+    "amt.phaseout": {
+      "value": {
+        "mfj_qss": [
+          1252700,
+          1800700
+        ],
+        "single_hoh": [
+          626350,
+          978750
+        ],
+        "mfs": [
+          626350,
+          900350
+        ],
+        "estates_trusts": [
+          102500,
+          225300
+        ],
+        "rate_2025": 0.25
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "2026+: thresholds reset to $500k/$1M (indexed from 2025) and 50% rate (OBBBA \u00a770107) - NOT 2025",
+      "verified": true,
+      "citation": "\u00a755(d)(2),(3); Rev. Proc. 2024-40 \u00a73.11",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i6251.pdf"
+      ]
+    },
+    "amt.rate_breakpoint_28pct": {
+      "value": {
+        "general": 239100,
+        "mfs": 119550
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a755(b)(1); Rev. Proc. 2024-40 \u00a73.11",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i6251.pdf"
+      ]
+    },
+    "amt.kiddie_exemption_earned_income_plus": {
+      "value": 9550,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a759(j)"
+    },
+    "eic.children_0": {
+      "value": {
+        "earned_income_amount": 8490,
+        "max_credit": 649,
+        "phaseout_start_other": 10620,
+        "phaseout_end_other": 19104,
+        "phaseout_start_mfj": 17730,
+        "phaseout_end_mfj": 26214
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a732(j)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a732(b); Rev. Proc. 2024-40 \u00a73.06",
+      "note": "Software must use the official 2025 EIC Table in the 1040 instructions (i1040gi): $50 bands, first row $1–$50, EIA-containing row prints the maximum credit, leftover starred terminals at completed-phaseout cutoffs."
+    },
+    "eic.children_1": {
+      "value": {
+        "earned_income_amount": 12730,
+        "max_credit": 4328,
+        "phaseout_start_other": 23350,
+        "phaseout_end_other": 50434,
+        "phaseout_start_mfj": 30470,
+        "phaseout_end_mfj": 57554
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a732(j)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a732(b); Rev. Proc. 2024-40 \u00a73.06"
+    },
+    "eic.children_2": {
+      "value": {
+        "earned_income_amount": 17880,
+        "max_credit": 7152,
+        "phaseout_start_other": 23350,
+        "phaseout_end_other": 57310,
+        "phaseout_start_mfj": 30470,
+        "phaseout_end_mfj": 64430
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a732(j)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a732(b); Rev. Proc. 2024-40 \u00a73.06"
+    },
+    "eic.children_3plus": {
+      "value": {
+        "earned_income_amount": 17880,
+        "max_credit": 8046,
+        "phaseout_start_other": 23350,
+        "phaseout_end_other": 61555,
+        "phaseout_start_mfj": 30470,
+        "phaseout_end_mfj": 68675
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a732(j)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a732(b); Rev. Proc. 2024-40 \u00a73.06"
+    },
+    "eic.investment_income_limit": {
+      "value": 11950,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a732(j)(2)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a732(i)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf"
+      ]
+    },
+    "ctc.per_child": {
+      "value": 2200,
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Fixed for 2025; indexed after 2025 (round down to $100)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a724(h)(2) as amended by OBBBA \u00a770104",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040s8.pdf"
+      ]
+    },
+    "ctc.refundable_max_per_child": {
+      "value": 1700,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a724(i)(1) ($1,400 base, 2017)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a724(h)(5); Rev. Proc. 2024-40 \u00a73.05",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040s8.pdf"
+      ]
+    },
+    "ctc.earned_income_threshold_and_rate": {
+      "value": {
+        "threshold": 2500,
+        "rate": 0.15
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i1040s8.pdf",
+      "indexing": "Statutory, not indexed",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a724(d)(1)(B)(i), \u00a724(h)(6)"
+    },
+    "ctc.phaseout_threshold": {
+      "value": {
+        "mfj": 400000,
+        "other": 200000,
+        "reduction_per_1000_or_fraction": 50,
+        "rounding": "up (each $1,000 or fraction of excess MAGI)",
+        "magi": "AGI + \u00a7911/931/933 exclusions"
+      },
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/24",
+      "indexing": "Statutory, not indexed",
+      "sunset": "Permanent (OBBBA \u00a770104(a)(1) struck the \"before January 1, 2026\" end date in \u00a724(h)(1))",
+      "verified": true,
+      "citation": "IRC \u00a724(b)(1) (rate: $50 per $1,000 or fraction; not amended by OBBBA); \u00a724(h)(3) thresholds ($400,000 joint / $200,000 other, replacing \u00a724(b)(2) $110k/$75k/$55k)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040s8.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i1040s8.pdf",
+        "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm"
+      ],
+      "note": "OBBBA \u00a770104 amended only \u00a724(h)(1),(2),(5),(7) and \u00a724(i); \u00a724(b) unchanged. Schedule 8812 (2025) lines 9-11: round excess up to next $1,000 multiple, x 5%. Applies to combined CTC + ODC."
+    },
+    "odc.per_dependent": {
+      "value": 500,
+      "source_url": "https://www.law.cornell.edu/uscode/text/26/24",
+      "indexing": "Statutory, NOT indexed (\u00a724(i) indexes only the $1,400 refundable and $2,200 amounts)",
+      "sunset": "Permanent: OBBBA \u00a770104(a)(1) removed the 12/31/2025 sunset from \u00a724(h)(1); \u00a724(h)(4) amount not changed",
+      "verified": true,
+      "citation": "IRC \u00a724(h)(4)(A) as in effect after P.L. 119-21 \u00a770104; Schedule 8812 (2025) line 7 \"Multiply line 6 by $500\"",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040s8.pdf",
+        "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm"
+      ],
+      "note": "Nonrefundable. New \u00a724(h)(4)(C): a qualifying child denied CTC under the \u00a724(h)(7) SSN rule is treated as an ODC dependent. \u00a724(h)(4)(B) noncitizen exception still applies."
+    },
+    "adoption_credit": {
+      "value": {
+        "max": 17280,
+        "phaseout_start": 259190,
+        "phaseout_end": 299190,
+        "refundable_portion_max": 5000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual; refundable $5,000 indexed after 2025",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a723; Rev. Proc. 2024-40 \u00a73.04; refundable portion OBBBA \u00a770402",
+      "also_confirmed_in": [
+        "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+        "https://www.irs.gov/pub/irs-pdf/f1040.pdf"
+      ],
+      "note": "Refundable part goes to new 1040 line 30."
+    },
+    "ptc.repayment_caps": {
+      "value": {
+        "lt_200_fpl": {
+          "single": 375,
+          "other": 750
+        },
+        "200_to_lt_300": {
+          "single": 975,
+          "other": 1950
+        },
+        "300_to_lt_400": {
+          "single": 1625,
+          "other": 3250
+        },
+        "400_plus": "no cap"
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual \u00a736B(f)(2)(B)(ii)",
+      "sunset": "ELIMINATED for tax years after 2025 (OBBBA \u00a771305) - caps still apply to 2025",
+      "verified": true,
+      "citation": "\u00a736B(f)(2)(B); Rev. Proc. 2024-40 \u00a73.07",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i8962.pdf"
+      ]
+    },
+    "ptc.applicable_percentage_table": {
+      "value": [
+        {
+          "fpl": "<150%",
+          "initial": 0.0,
+          "final": 0.0
+        },
+        {
+          "fpl": "150-<200%",
+          "initial": 0.0,
+          "final": 0.02
+        },
+        {
+          "fpl": "200-<250%",
+          "initial": 0.02,
+          "final": 0.04
+        },
+        {
+          "fpl": "250-<300%",
+          "initial": 0.04,
+          "final": 0.06
+        },
+        {
+          "fpl": "300-<400%",
+          "initial": 0.06,
+          "final": 0.085
+        },
+        {
+          "fpl": "400%+",
+          "initial": 0.085,
+          "final": 0.085
+        }
+      ],
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-35.pdf",
+      "indexing": "Not indexed 2021-2025 (ARPA/IRA)",
+      "sunset": "Enhanced table expires after 2025 (IRA \u00a712001); no 400% cliff in 2025",
+      "verified": true,
+      "citation": "\u00a736B(b)(3)(A)(iii); Rev. Proc. 2024-35 \u00a72.01",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i8962.pdf"
+      ]
+    },
+    "ptc.required_contribution_pct": {
+      "value": 0.0902,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-35.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a736B(c)(2)(C)(i)(II); Rev. Proc. 2024-35 \u00a72.02"
+    },
+    "ptc.federal_poverty_line_2024_used_for_2025": {
+      "value": {
+        "contiguous": {
+          "1": 15060,
+          "add_each": 5380,
+          "8": 52720
+        },
+        "alaska": {
+          "1": 18810,
+          "add_each": 6730
+        },
+        "hawaii": {
+          "1": 17310,
+          "add_each": 6190
+        }
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i8962.pdf",
+      "indexing": "Annual HHS guidelines (prior year)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a736B(d)(3)(B); Form 8962 instructions Tables 1-1 to 1-3"
+    },
+    "qbi.threshold": {
+      "value": {
+        "mfj": 394600,
+        "other": 197300
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "Permanent (OBBBA \u00a770105)",
+      "verified": true,
+      "citation": "\u00a7199A(e)(2); Rev. Proc. 2024-40 \u00a73.27",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i8995.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i8995a.pdf"
+      ]
+    },
+    "qbi.phase_in_range": {
+      "value": {
+        "mfj": 100000,
+        "other": 50000,
+        "mfj_end": 494600,
+        "other_end": 247300
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i8995a.pdf",
+      "indexing": "Statutory",
+      "sunset": "2026+: $150,000/$75,000 (OBBBA \u00a770105(a)) - NOT 2025",
+      "verified": true,
+      "citation": "\u00a7199A(b)(3)(B), (d)(3)"
+    },
+    "qbi.minimum_deduction": {
+      "value": null,
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "n/a",
+      "sunset": "Begins 2026 ($400 if >= $1,000 active QBI) - NOT 2025",
+      "verified": true,
+      "citation": "\u00a7199A(i) as amended by OBBBA \u00a770105(b)",
+      "note": "Not applicable to 2025."
+    },
+    "education.aotc_llc_magi_phaseout": {
+      "value": {
+        "single_hoh_qss": [
+          80000,
+          90000
+        ],
+        "mfj": [
+          160000,
+          180000
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i8863.pdf",
+      "indexing": "NOT indexed (statutory since 2021 for LLC; AOTC fixed)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a725A(d)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025"
+      ],
+      "note": "MFS cannot claim. AOTC max $2,500, 40% refundable; LLC max $2,000."
+    },
+    "education.credit_amounts": {
+      "value": {
+        "aotc_max": 2500,
+        "aotc_refundable_pct": 0.4,
+        "llc_max": 2000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i8863.pdf",
+      "indexing": "Statutory",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a725A(b),(c),(i)"
+    },
+    "savers_credit.agi_tiers": {
+      "value": {
+        "mfj": [
+          47500,
+          51000,
+          79000
+        ],
+        "hoh": [
+          35625,
+          38250,
+          59250
+        ],
+        "other": [
+          23750,
+          25500,
+          39500
+        ],
+        "rates": [
+          0.5,
+          0.2,
+          0.1
+        ],
+        "max_contribution_per_person": 2000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual \u00a725B(b)(3)",
+      "sunset": "Credit form through 2026; replaced by Saver's Match 2027 (SECURE 2.0); $2,100 cap from 2027 (OBBBA \u00a770116)",
+      "verified": true,
+      "citation": "\u00a725B; Notice 2024-80",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f8880.pdf"
+      ]
+    },
+    "retirement.401k_elective_deferral": {
+      "value": 23500,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual \u00a7402(g)(4)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7402(g)(1)"
+    },
+    "retirement.catch_up": {
+      "value": {
+        "age50": 7500,
+        "age60_63": 11250,
+        "simple_age50": 3500,
+        "simple_age60_63": 5250
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual (60-63 = greater of $10,000 or 150% of regular, indexed after 2025)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7414(v)(2)(B),(E)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf"
+      ]
+    },
+    "retirement.simple_deferral": {
+      "value": 16500,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7408(p)(2)(E)"
+    },
+    "retirement.415c_dc_limit": {
+      "value": 70000,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7415(c)(1)(A)"
+    },
+    "retirement.401a17_comp_limit": {
+      "value": 350000,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7401(a)(17), \u00a7408(k)(3)(C)"
+    },
+    "ira.contribution_limit": {
+      "value": {
+        "base": 7000,
+        "catch_up_50": 1000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual (catch-up indexed from 2024 per SECURE 2.0; unchanged 2025)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7219(b)(5)"
+    },
+    "ira.deduction_phaseout_active_participant": {
+      "value": {
+        "single_hoh": [
+          79000,
+          89000
+        ],
+        "mfj_participant": [
+          126000,
+          146000
+        ],
+        "mfj_spouse_of_participant": [
+          236000,
+          246000
+        ],
+        "mfs": [
+          0,
+          10000
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual (MFS not indexed)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7219(g)"
+    },
+    "roth.contribution_phaseout": {
+      "value": {
+        "mfj_qss": [
+          236000,
+          246000
+        ],
+        "single_hoh": [
+          150000,
+          165000
+        ],
+        "mfs": [
+          0,
+          10000
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual (MFS not indexed)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7408A(c)(3)(A),(B)(ii); Notice 2024-80 (\"For singles and heads of household, the income phase-out range is between $150,000 and $165,000\")",
+      "note": "Applicable dollar amounts indexed (MFS $0 not indexed); range widths statutory ($10k joint/MFS, $15k other)."
+    },
+    "ira.qcd_limit": {
+      "value": 108000,
+      "source_url": "https://www.irs.gov/pub/irs-drop/n-24-80.pdf",
+      "indexing": "Annual (SECURE 2.0)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7408(d)(8)"
+    },
+    "hsa.contribution_limit": {
+      "value": {
+        "self_only": 4300,
+        "family": 8550,
+        "catch_up_55": 1000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-25.pdf",
+      "indexing": "Annual \u00a7223(g); catch-up statutory",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7223(b)(2),(3); Rev. Proc. 2024-25 \u00a72.01",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/p969.pdf",
+        "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025"
+      ]
+    },
+    "hsa.hdhp": {
+      "value": {
+        "min_deductible_self": 1650,
+        "min_deductible_family": 3300,
+        "max_oop_self": 8300,
+        "max_oop_family": 16600
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-25.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7223(c)(2)(A)"
+    },
+    "health_fsa": {
+      "value": {
+        "salary_reduction": 3300,
+        "carryover": 660
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7125(i)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025"
+      ]
+    },
+    "dependent_care_assistance_exclusion": {
+      "value": {
+        "general": 5000,
+        "mfs": 2500
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i2441.pdf",
+      "indexing": "Statutory, not indexed",
+      "sunset": "$7,500/$3,750 from 2026 (OBBBA \u00a770404) - NOT 2025",
+      "verified": true,
+      "citation": "\u00a7129(a)(2)(A)"
+    },
+    "child_dependent_care_credit": {
+      "value": {
+        "expense_limit_one": 3000,
+        "expense_limit_two_plus": 6000,
+        "max_rate": 0.35,
+        "agi_rate_reduction_start": 15000,
+        "min_rate": 0.2,
+        "min_rate_agi": 43000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i2441.pdf",
+      "indexing": "Statutory, not indexed",
+      "sunset": "2026+: 50% max rate with second phase-down (OBBBA \u00a770405) - NOT 2025",
+      "verified": true,
+      "citation": "\u00a721(a),(c)"
+    },
+    "student_loan_interest": {
+      "value": {
+        "max": 2500,
+        "phaseout_other": [
+          85000,
+          100000
+        ],
+        "phaseout_mfj": [
+          170000,
+          200000
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual (phase-out); $2,500 cap statutory",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7221(b); Rev. Proc. 2024-40 \u00a73.24"
+    },
+    "educator_expense": {
+      "value": 300,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a762(a)(2)(D)"
+    },
+    "savings_bond_exclusion_phaseout": {
+      "value": {
+        "mfj": [
+          149250,
+          179250
+        ],
+        "other": [
+          99500,
+          114500
+        ]
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7135(b)(2)"
+    },
+    "qualifying_relative_gross_income": {
+      "value": 5200,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7152(d)(1)(B), \u00a7151(d)(5)(B)"
+    },
+    "ltc_premium_limits": {
+      "value": {
+        "age_40_or_less": 480,
+        "41_50": 900,
+        "51_60": 1800,
+        "61_70": 4810,
+        "71_plus": 6020
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7213(d)(10)"
+    },
+    "excess_business_loss": {
+      "value": {
+        "mfj": 626000,
+        "other": 313000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "Permanent (OBBBA \u00a770601); re-based from 2026",
+      "verified": true,
+      "citation": "\u00a7461(l)(3)"
+    },
+    "feie": {
+      "value": 130000,
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "Annual",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a7911(b)(2)(D)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2025"
+      ]
+    },
+    "section179": {
+      "value": {
+        "limit": 2500000,
+        "phaseout_start": 4000000,
+        "suv_limit": 31300
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i4562.pdf",
+      "indexing": "Indexed after 2025 (base 2024)",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a7179(b) as amended by OBBBA \u00a770306",
+      "also_confirmed_in": [
+        "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm"
+      ],
+      "note": "SUPERSEDES Rev. Proc. 2024-40 \u00a73.21 ($1,250,000 / $3,130,000). SUV $31,300 unchanged."
+    },
+    "section179_rev_proc_superseded": {
+      "value": {
+        "limit": 1250000,
+        "phaseout_start": 3130000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-drop/rp-24-40.pdf",
+      "indexing": "n/a",
+      "sunset": "Superseded by OBBBA",
+      "verified": true,
+      "citation": "Rev. Proc. 2024-40",
+      "note": "DO NOT USE."
+    },
+    "bonus_depreciation": {
+      "value": {
+        "pct_acquired_after_2025_01_19": 1.0,
+        "pct_acquired_before_2025_01_20": 0.4
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i4562.pdf",
+      "indexing": "Statutory",
+      "sunset": "Permanent 100% (OBBBA \u00a770301)",
+      "verified": true,
+      "citation": "\u00a7168(k)",
+      "note": "Election to use 40% instead of 100% for first tax year ending after 1/19/2025."
+    },
+    "estimated_tax.safe_harbors": {
+      "value": {
+        "current_year_pct": 0.9,
+        "prior_year_pct": 1.0,
+        "prior_year_pct_high_agi": 1.1,
+        "high_agi_threshold": 150000,
+        "high_agi_threshold_mfs": 75000,
+        "no_penalty_if_owed_less_than": 1000,
+        "farm_fish_pct": 0.6667
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i2210.pdf",
+      "indexing": "Statutory, not indexed",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a76654(d)(1), (e)(1), (i)"
+    },
+    "estimated_tax.underpayment_rate": {
+      "value": {
+        "2025-04-16_to_2025-06-30": 0.07,
+        "2025-07-01_to_2025-09-30": 0.07,
+        "2025-10-01_to_2025-12-31": 0.07,
+        "2026-01-01_to_2026-04-15": 0.07,
+        "day_count": 365
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i2210.pdf",
+      "indexing": "Quarterly \u00a76621(a)(2)",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a76621, \u00a76654(a)"
+    },
+    "salt.cap": {
+      "value": {
+        "cap": 40000,
+        "cap_mfs": 20000,
+        "magi_threshold": 500000,
+        "magi_threshold_mfs": 250000,
+        "phasedown_rate": 0.3,
+        "floor": 10000,
+        "floor_mfs": 5000
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Statutory: $40,400/$505,000 in 2026, +1%/yr 2027-2029",
+      "sunset": "Reverts to $10,000 for 2030+",
+      "verified": true,
+      "citation": "\u00a7164(b)(6),(7) (OBBBA \u00a770120)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040sa.pdf"
+      ],
+      "note": "MFS: compute on full $40k with $250k threshold, floor $10k, then halve."
+    },
+    "obbba.tips": {
+      "value": {
+        "cap": 25000,
+        "magi_threshold": 150000,
+        "magi_threshold_mfj": 300000,
+        "reduction_per_1000": 100,
+        "rounding": "down (whole $1,000s of excess)"
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Not indexed",
+      "sunset": "No deduction for tax years beginning after 12/31/2028",
+      "verified": true,
+      "citation": "\u00a7224 (OBBBA \u00a770201)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf",
+        "https://www.irs.gov/pub/irs-drop/n-25-69.pdf"
+      ],
+      "note": "Cap is per return (not per spouse). MFJ required if married; valid SSN."
+    },
+    "obbba.overtime": {
+      "value": {
+        "cap": 12500,
+        "cap_mfj": 25000,
+        "magi_threshold": 150000,
+        "magi_threshold_mfj": 300000,
+        "reduction_per_1000": 100,
+        "rounding": "down"
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Not indexed",
+      "sunset": "After 2028 none",
+      "verified": true,
+      "citation": "\u00a7225 (OBBBA \u00a770202)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf",
+        "https://www.irs.gov/pub/irs-drop/n-25-69.pdf"
+      ]
+    },
+    "obbba.car_loan_interest": {
+      "value": {
+        "cap": 10000,
+        "magi_threshold": 100000,
+        "magi_threshold_mfj": 200000,
+        "reduction_per_1000_or_portion": 200,
+        "rounding": "up (each $1,000 or portion)"
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Not indexed",
+      "sunset": "Tax years 2025-2028",
+      "verified": true,
+      "citation": "\u00a7163(h)(4) (OBBBA \u00a770203); Prop. Reg. \u00a71.163-16",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf"
+      ],
+      "note": "No joint-return or SSN requirement in statute; VIN required; MFS uses $100,000."
+    },
+    "obbba.senior_deduction": {
+      "value": {
+        "per_qualified_individual": 6000,
+        "phaseout_rate": 0.06,
+        "magi_threshold": 75000,
+        "magi_threshold_mfj": 150000
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Not indexed",
+      "sunset": "Tax years beginning before 1/1/2029",
+      "verified": true,
+      "citation": "\u00a7151(d)(5)(C) (OBBBA \u00a770103)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/f1040s1a.pdf",
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf"
+      ],
+      "note": "MFJ required if married; SSN required; phase-out is per $6,000 amount (each spouse). Age 65 by year end (born before 1/2/1961)."
+    },
+    "information_reporting.form_1099k_threshold": {
+      "value": {
+        "amount_more_than": 20000,
+        "transactions_more_than": 200
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Not indexed",
+      "sunset": "Permanent (retroactive to ARPA)",
+      "verified": true,
+      "citation": "\u00a76050W(e) (OBBBA \u00a770432)",
+      "also_confirmed_in": [
+        "https://www.irs.gov/pub/irs-pdf/i1040gi.pdf"
+      ]
+    },
+    "information_reporting.form_1099nec_misc_threshold": {
+      "value": {
+        "2025": 600,
+        "2026": 2000
+      },
+      "source_url": "https://www.congress.gov/119/plaws/publ21/PLAW-119publ21.htm",
+      "indexing": "Indexed after 2026",
+      "sunset": "n/a",
+      "verified": true,
+      "citation": "\u00a76041(a) (OBBBA \u00a770433)",
+      "note": "$2,000 applies to payments after 12/31/2025 - NOT 2025."
+    },
+    "schedule_a.medical_floor_pct": {
+      "value": 0.075,
+      "source_url": "https://www.irs.gov/pub/irs-pdf/f1040sa.pdf",
+      "indexing": "Statutory",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a7213(a)"
+    },
+    "schedule_a.mortgage_debt_limit": {
+      "value": {
+        "general": 750000,
+        "mfs": 375000
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/f1040sa.pdf",
+      "indexing": "Statutory",
+      "sunset": "Permanent (OBBBA \u00a770108)",
+      "verified": true,
+      "citation": "\u00a7163(h)(3)(F)",
+      "note": "Mortgage insurance premiums deductible again from 2026 - NOT 2025."
+    },
+    "capital_loss_limit": {
+      "value": {
+        "general": 3000,
+        "mfs": 1500
+      },
+      "source_url": "https://www.irs.gov/pub/irs-pdf/i1040sd.pdf",
+      "indexing": "Statutory",
+      "sunset": "Permanent",
+      "verified": true,
+      "citation": "\u00a71211(b)"
+    }
+  }
+}

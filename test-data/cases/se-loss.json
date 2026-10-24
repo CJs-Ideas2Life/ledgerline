@@ -1,0 +1,37 @@
+{
+  "id": "se-loss",
+  "category": "self-employment",
+  "description": "W-2 $60,000 plus a Schedule C loss of $10,000.",
+  "derivation": "Sch. C line 31 = 5,000 − 15,000 = ($10,000). Sch. 1 line 3 = ($10,000). AGI = $50,000. Net earnings from SE are negative → no SE tax (Schedule SE line 4c < $400).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 60000,
+        "federalWithholding": 6000,
+        "socialSecurityWages": 60000,
+        "medicareWages": 60000,
+        "medicareTax": 870
+      }
+    ],
+    "businesses": [
+      {
+        "grossReceipts": 5000,
+        "expenses": {
+          "otherExpenses": 15000
+        }
+      }
+    ]
+  },
+  "expected": {
+    "schedule1": {
+      "3": -10000
+    },
+    "schedule2": {
+      "4": 0
+    },
+    "form1040": {
+      "11b": 50000,
+      "13a": 0
+    }
+  }
+}

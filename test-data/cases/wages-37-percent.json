@@ -1,0 +1,30 @@
+{
+  "id": "wages-37-percent",
+  "category": "wages",
+  "description": "Single filer with $700,000 wages — 37% bracket, Tax Computation Worksheet.",
+  "derivation": "TI = 700,000 − 15,750 = 684,250. Schedule tax (RP 2024-40 Table 3): $210,192.75. Tax Computation Worksheet (i1040gi p. 80) rounds to $210,193. Additional Medicare Tax: (700,000 − 200,000) × 0.9% = $4,500 (Form 8959 lines 6–7). Total tax = 210,193 + 4,500 = $214,693.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 700000,
+        "federalWithholding": 180000,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 700000,
+        "medicareTax": 14650
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 684250,
+      "16": 210193,
+      "23": 4500,
+      "24": 214693
+    },
+    "form8959": {
+      "7": 4500
+    },
+    "taxMethod": "computation-worksheet"
+  }
+}

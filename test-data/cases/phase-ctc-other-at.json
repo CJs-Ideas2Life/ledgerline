@@ -1,0 +1,32 @@
+{
+  "id": "phase-ctc-other-at",
+  "category": "boundaries",
+  "description": "Single + 1 child, MAGI exactly $200,000 — CTC not yet phased.",
+  "derivation": "Schedule 8812 line 9 other = $200,000. Excess 0. Credit $2,200 limited by tax. RP 2024-40 / Sch. 8812 line 9.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 200000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 200000,
+        "medicareTax": 2900
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "Kid",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "schedule8812": {
+      "5": 2200,
+      "11": 0,
+      "12": 2200
+    }
+  }
+}

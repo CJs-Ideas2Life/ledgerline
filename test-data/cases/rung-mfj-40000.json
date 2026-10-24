@@ -1,0 +1,25 @@
+{
+  "id": "rung-mfj-40000",
+  "category": "wages",
+  "description": "MFJ one-earner W-2 of $40,000.",
+  "derivation": "Std 31,500. TI 8500. Tax $853.",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 40000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 40000,
+        "socialSecurityTax": 2480,
+        "medicareWages": 40000,
+        "medicareTax": 580
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 8500,
+      "16": 853
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "var-50k-qss",
+  "category": "variants",
+  "description": "Same $50,000 W-2 facts filed as qss. Metamorphic filing-status variant.",
+  "derivation": "Std 31500 (Form 1040 2025). TI = 50,000 − 31500 = 18500. Tax Table midpoint → $1853 (RP 2024-40 § 3.01).",
+  "input": {
+    "filingStatus": "qss",
+    "dependents": [
+      {
+        "firstName": "Pat",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 50000,
+        "socialSecurityTax": 3100,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 31500,
+    "form1040": {
+      "15": 18500,
+      "16": 1853,
+      "1z": 50000
+    },
+    "taxMethod": "table"
+  }
+}

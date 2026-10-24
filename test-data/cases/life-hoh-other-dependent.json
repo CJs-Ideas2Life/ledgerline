@@ -1,0 +1,35 @@
+{
+  "id": "life-hoh-other-dependent",
+  "category": "credits",
+  "description": "HOH with a parent (not under 17) — $500 ODC, HOH standard deduction.",
+  "derivation": "Std $23,625. Wages $48,000. TI 24,375. ODC $500 (Sch. 8812 line 7).",
+  "input": {
+    "filingStatus": "hoh",
+    "dependents": [
+      {
+        "firstName": "Parent",
+        "relationship": "Parent",
+        "under17": false,
+        "eicQualifying": false
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 48000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 48000,
+        "socialSecurityTax": 2976,
+        "medicareWages": 48000,
+        "medicareTax": 696
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 23625,
+    "form1040": {
+      "15": 24375,
+      "16": 2585,
+      "19": 500
+    }
+  }
+}

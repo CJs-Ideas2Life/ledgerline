@@ -1,0 +1,28 @@
+{
+  "id": "life-grad-dependent",
+  "category": "seniors-dependent",
+  "description": "Dependent college student, $8,200 W-2, claimed by a parent.",
+  "derivation": "Dependent std = min(15,750, max(1,350, 8,200+450)) = $8,650. TI 0. No EIC (can-be-claimed).",
+  "input": {
+    "canBeClaimedAsDependent": true,
+    "w2s": [
+      {
+        "wages": 8200,
+        "federalWithholding": 400,
+        "socialSecurityWages": 8200,
+        "socialSecurityTax": 508,
+        "medicareWages": 8200,
+        "medicareTax": 119
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 8650,
+    "form1040": {
+      "15": 0,
+      "16": 0,
+      "27a": 0
+    },
+    "refund": 400
+  }
+}

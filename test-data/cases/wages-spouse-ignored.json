@@ -1,0 +1,27 @@
+{
+  "id": "wages-spouse-ignored",
+  "category": "wages",
+  "description": "Single filer with a spouse-owned W-2 — ignored, with a warning.",
+  "derivation": "Form 1040 is a single return; only the taxpayer’s items are included. Spouse W-2 $40,000 is dropped. Line 1z = $0.",
+  "input": {
+    "filingStatus": "single",
+    "w2s": [
+      {
+        "owner": "spouse",
+        "wages": 40000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 40000,
+        "medicareWages": 40000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 0,
+      "1z": 0
+    },
+    "warningsIncludes": [
+      "Spouse-owned"
+    ]
+  }
+}

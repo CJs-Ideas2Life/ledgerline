@@ -1,0 +1,27 @@
+{
+  "id": "g4-tips-not-full-thousand",
+  "category": "schedule-1a",
+  "description": "Single, $10,000 qualified tips, MAGI $150,999 — tips/OT reduce only per full $1,000 (G4).",
+  "derivation": "Schedule 1-A lines 10–13: excess $999; floor(999/1,000) = 0 × $100 = $0. Deduction stays $10,000. A $1,000 excess would cut $100.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 150999,
+        "federalWithholding": 28000,
+        "socialSecurityWages": 150999,
+        "socialSecurityTax": 9362,
+        "medicareWages": 150999,
+        "medicareTax": 2189,
+        "qualifiedTips": 10000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "10": 999,
+      "11": 0,
+      "12": 0,
+      "13": 10000
+    }
+  }
+}

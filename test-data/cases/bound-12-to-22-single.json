@@ -1,0 +1,23 @@
+{
+  "id": "bound-12-to-22-single",
+  "category": "boundaries",
+  "description": "Single taxable income just into the 22% bracket ($48,476).",
+  "derivation": "RP 2024-40 Table 3: 12% ends at $48,475. Wages 48,476 + 15,750 = $64,226 → TI $48,476. Tax Table (under $100,000) still applies; the 22% marginal rate begins here.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 64226,
+        "federalWithholding": 8000,
+        "socialSecurityWages": 64226,
+        "medicareWages": 64226,
+        "medicareTax": 931
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 48476
+    },
+    "taxMethod": "table"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "odc-ssn-denied-child",
+  "category": "credits",
+  "description": "HOH, one child under 17 without a valid SSN — § 24(h)(4)(C) treats the child as an other dependent instead of denying the credit.",
+  "derivation": "Schedule 8812 lines 4–7: no qualifying-child SSN so line 4 = 0 and line 5 = $0; the same child is the one other dependent on line 6, so line 7 = $500. Taxpayer has a valid SSN. MAGI $60,000 is below the $200,000 other-status phase-out, so lines 10–11 are $0 and line 12 = $500. Tax on HOH $36,375 covers the $500 ODC on Form 1040 line 19.",
+  "input": {
+    "filingStatus": "hoh",
+    "w2s": [
+      {
+        "wages": 60000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 60000,
+        "medicareWages": 60000
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "hasValidSSN": false,
+        "eicQualifying": false
+      }
+    ]
+  },
+  "expected": {
+    "schedule8812": {
+      "4": 0,
+      "5": 0,
+      "6": 1,
+      "7": 500,
+      "12": 500
+    },
+    "form1040": {
+      "19": 500
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "inv-qd-20pct",
+  "category": "investments",
+  "description": "Single, $600,000 wages plus $50,000 qualified dividends — 20% CG rate.",
+  "derivation": "TI = 650,000 − 15,750 = 634,250. QDCG line 6 $48,350 and line 13 $533,400 (RP 2024-40 § 3.03). Ordinary TI = 584,250 is already above the 15% cap, so the entire $50,000 of QD is taxed at 20% = $10,000 plus regular tax on $584,250.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 600000,
+        "federalWithholding": 160000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 600000,
+        "medicareTax": 12300
+      }
+    ],
+    "dividends": [
+      {
+        "payer": "Broker",
+        "ordinary": 50000,
+        "qualified": 50000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 634250,
+      "3a": 50000
+    },
+    "taxMethod": "qdcg-worksheet"
+  }
+}

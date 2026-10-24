@@ -1,0 +1,24 @@
+{
+  "id": "bound-computation-worksheet",
+  "category": "boundaries",
+  "description": "Taxable income exactly $100,000 — Tax Computation Worksheet.",
+  "derivation": "Wages $115,750 − $15,750 = $100,000. Worksheet: 100,000 × 22% − $5,086 = $16,914 (i1040gi p. 80, single 22% row).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 115750,
+        "federalWithholding": 20000,
+        "socialSecurityWages": 115750,
+        "medicareWages": 115750,
+        "medicareTax": 1678
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 100000,
+      "16": 16914
+    },
+    "taxMethod": "computation-worksheet"
+  }
+}

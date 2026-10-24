@@ -1,0 +1,25 @@
+{
+  "id": "se-health-and-sep",
+  "category": "self-employment",
+  "description": "Studio profit $57,500; $6,000 SE health insurance and a requested $50,000 SEP.",
+  "derivation": "½ SE tax = $4,063. Employer SEP cap = 20% × (57,500 − 4,063) = $10,687 (Pub. 560; Notice 2024-80 $70,000 overall). Health $6,000 is under the remaining profit. AGI = 57,500 − 4,063 − 10,687 − 6,000 = $36,750.",
+  "input": {
+    "businesses": [
+      {
+        "grossReceipts": 57500,
+        "seHealthInsurance": 6000,
+        "sepOrSoloEmployer": 50000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1": {
+      "15": 4063,
+      "16": 10687,
+      "17": 6000
+    },
+    "form1040": {
+      "11b": 36750
+    }
+  }
+}

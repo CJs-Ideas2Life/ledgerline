@@ -1,0 +1,36 @@
+{
+  "id": "life-ss-wage-base-split",
+  "category": "wages",
+  "description": "Single, two W-2s that together cross the $176,100 social-security wage base.",
+  "derivation": "Wages 100,000 + 90,000 = 190,000. Box 3 on each job can be full wages (employers do not coordinate). Additional Medicare starts at $200,000 so none here. TI 190,000 − 15,750 = 174,250.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 100000,
+        "federalWithholding": 18000,
+        "socialSecurityWages": 100000,
+        "socialSecurityTax": 6200,
+        "medicareWages": 100000,
+        "medicareTax": 1450
+      },
+      {
+        "wages": 90000,
+        "federalWithholding": 16000,
+        "socialSecurityWages": 90000,
+        "socialSecurityTax": 5580,
+        "medicareWages": 90000,
+        "medicareTax": 1305
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 174250,
+      "16": 34667,
+      "1z": 190000
+    },
+    "form8959": {
+      "18": 0
+    }
+  }
+}

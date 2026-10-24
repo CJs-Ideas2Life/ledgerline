@@ -1,0 +1,31 @@
+{
+  "id": "bound-ctc-phaseout-edge",
+  "category": "boundaries",
+  "description": "MFJ MAGI exactly $400,000, one child — no CTC phase-out. One dollar more would start it.",
+  "derivation": "Schedule 8812 line 9 = $400,000 MFJ. Excess $0 → line 10 = $0. Full $2,200.",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 400000,
+        "federalWithholding": 80000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 400000,
+        "medicareTax": 7600
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "schedule8812": {
+      "10": 0,
+      "12": 2200
+    }
+  }
+}

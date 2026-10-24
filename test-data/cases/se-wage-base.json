@@ -1,0 +1,31 @@
+{
+  "id": "se-wage-base",
+  "category": "self-employment",
+  "description": "W-2 social security wages $170,000 plus $50,000 of SE profit — remaining wage base $6,100.",
+  "derivation": "SE net earnings = 50,000 × 92.35% = $46,175. Remaining SS base = 176,100 − 170,000 = $6,100 (RP 2024-40 / Sch. SE line 7). SS portion 6,100 × 12.4% = $756; Medicare 46,175 × 2.9% = $1,339; SE tax $2,095.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 170000,
+        "federalWithholding": 30000,
+        "socialSecurityWages": 170000,
+        "socialSecurityTax": 10540,
+        "medicareWages": 170000,
+        "medicareTax": 2465
+      }
+    ],
+    "businesses": [
+      {
+        "grossReceipts": 50000
+      }
+    ]
+  },
+  "expected": {
+    "scheduleSE.0.lines": {
+      "9": 6100,
+      "10": 756,
+      "11": 1339,
+      "12": 2095
+    }
+  }
+}

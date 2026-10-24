@@ -1,0 +1,1448 @@
+{
+  "generatedAt": "2026-10-23T05:32:01.207Z",
+  "oracle": "separately written Form 1040 instruction walk (src/oracle; does not import engine code). Same author as the engine — not an independent assessment. PolicyEngine-US / Tax-Calculator not used — see src/oracle/README.md.",
+  "cases": 165,
+  "casePass": 165,
+  "caseFail": 0,
+  "linesCompared": 31492,
+  "linesMatched": 31492,
+  "overallPct": 100,
+  "modules": [
+    {
+      "module": "form1040",
+      "compared": 7590,
+      "matched": 7590,
+      "pct": 100
+    },
+    {
+      "module": "form2210",
+      "compared": 169,
+      "matched": 169,
+      "pct": 100
+    },
+    {
+      "module": "form4952",
+      "compared": 990,
+      "matched": 990,
+      "pct": 100
+    },
+    {
+      "module": "form6251",
+      "compared": 1834,
+      "matched": 1834,
+      "pct": 100
+    },
+    {
+      "module": "form8959",
+      "compared": 2310,
+      "matched": 2310,
+      "pct": 100
+    },
+    {
+      "module": "form8960",
+      "compared": 1650,
+      "matched": 1650,
+      "pct": 100
+    },
+    {
+      "module": "form8995",
+      "compared": 1650,
+      "matched": 1650,
+      "pct": 100
+    },
+    {
+      "module": "form8995A",
+      "compared": 18,
+      "matched": 18,
+      "pct": 100
+    },
+    {
+      "module": "qdcgWorksheet",
+      "compared": 225,
+      "matched": 225,
+      "pct": 100
+    },
+    {
+      "module": "schedule1",
+      "compared": 990,
+      "matched": 990,
+      "pct": 100
+    },
+    {
+      "module": "schedule1A",
+      "compared": 1958,
+      "matched": 1958,
+      "pct": 100
+    },
+    {
+      "module": "schedule2",
+      "compared": 990,
+      "matched": 990,
+      "pct": 100
+    },
+    {
+      "module": "schedule8812",
+      "compared": 2974,
+      "matched": 2974,
+      "pct": 100
+    },
+    {
+      "module": "scheduleA",
+      "compared": 3960,
+      "matched": 3960,
+      "pct": 100
+    },
+    {
+      "module": "scheduleB",
+      "compared": 990,
+      "matched": 990,
+      "pct": 100
+    },
+    {
+      "module": "scheduleC",
+      "compared": 662,
+      "matched": 662,
+      "pct": 100
+    },
+    {
+      "module": "scheduleD",
+      "compared": 1320,
+      "matched": 1320,
+      "pct": 100
+    },
+    {
+      "module": "scheduleSE",
+      "compared": 222,
+      "matched": 222,
+      "pct": 100
+    },
+    {
+      "module": "totals",
+      "compared": 990,
+      "matched": 990,
+      "pct": 100
+    }
+  ],
+  "perCase": [
+    {
+      "id": "amt-salt-no-amt",
+      "category": "amt",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "amt-senior-addback",
+      "category": "amt",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-10-12-hoh-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-10-12-hoh-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-10-12-mfj-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-10-12-mfj-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-10-12-single-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-10-12-single-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-10-12-single-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-12-22-mfj-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-12-22-mfj-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-12-22-single-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-12-22-single-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-12-22-single-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-12-to-22-single",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-22-24-single-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-22-24-single-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-22-24-single-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-24-32-single-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-24-32-single-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-24-32-single-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-32-35-single-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-32-35-single-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-32-35-single-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-35-37-single-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-35-37-single-minus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-35-37-single-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-computation-worksheet",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-ctc-phaseout-edge",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "bound-tax-table-top",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "ctc-actc-hoh",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "ctc-phaseout",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "ctc-three-kids-part2b",
+      "category": "credits",
+      "pass": true,
+      "compared": 188,
+      "matched": 188,
+      "mismatches": []
+    },
+    {
+      "id": "ctc-two-kids-mfj",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "dependent-filer-earned",
+      "category": "seniors",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "dependent-filer-min",
+      "category": "seniors",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "eic-childless",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "eic-investment-limit",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "eic-one-child-max",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "family-hoh-three-kids",
+      "category": "family",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "family-retired-couple",
+      "category": "family",
+      "pass": true,
+      "compared": 209,
+      "matched": 209,
+      "mismatches": []
+    },
+    {
+      "id": "family-rivera-sample",
+      "category": "family",
+      "pass": true,
+      "compared": 265,
+      "matched": 265,
+      "mismatches": []
+    },
+    {
+      "id": "family-single-parent-tips",
+      "category": "family",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "g10-qbi-2025-range",
+      "category": "qbi",
+      "pass": true,
+      "compared": 236,
+      "matched": 236,
+      "mismatches": []
+    },
+    {
+      "id": "g18-eic-table-band",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "g18-tax-table-band",
+      "category": "brackets",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "g4-car-portion",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "g4-senior-straight-6",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "g4-tips-not-full-thousand",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "g5-mfs-car-allowed",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "g7-s1a-before-qbi",
+      "category": "qbi",
+      "pass": true,
+      "compared": 233,
+      "matched": 233,
+      "mismatches": []
+    },
+    {
+      "id": "g8-salt-mfs-floor",
+      "category": "itemized",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "g8-salt-mfs-just-over",
+      "category": "itemized",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "g9-qss-niit-vs-addmed",
+      "category": "other-tax",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "inv-foreign-account",
+      "category": "investments",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "inv-qd-0pct",
+      "category": "investments",
+      "pass": true,
+      "compared": 209,
+      "matched": 209,
+      "mismatches": []
+    },
+    {
+      "id": "inv-qd-15pct",
+      "category": "investments",
+      "pass": true,
+      "compared": 209,
+      "matched": 209,
+      "mismatches": []
+    },
+    {
+      "id": "inv-qd-20pct",
+      "category": "investments",
+      "pass": true,
+      "compared": 228,
+      "matched": 228,
+      "mismatches": []
+    },
+    {
+      "id": "inv-schb-threshold",
+      "category": "investments",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "inv-tax-exempt",
+      "category": "investments",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-4952",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-charity-30pct-noncash",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-charity-60pct",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-medical-floor",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-mortgage-750k",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-salt-cap",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-salt-floor",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-salt-mfs-half",
+      "category": "itemized",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "item-salt-phasedown",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "item-vs-standard",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-blind-mfj",
+      "category": "seniors-dependent",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-charity-carry-only",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-gig-single",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 233,
+      "matched": 233,
+      "mismatches": []
+    },
+    {
+      "id": "life-grad-dependent",
+      "category": "seniors-dependent",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-hoh-other-dependent",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-itemized-just-over",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-itemized-just-under",
+      "category": "itemized",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-mfj-one-senior",
+      "category": "seniors-dependent",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-mfs-lived-apart-eic",
+      "category": "credits",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "life-mfs-salt-half-edge",
+      "category": "itemized",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "life-nurse-mfj",
+      "category": "family",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-qss-widow",
+      "category": "filing-status",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-retiree-interest",
+      "category": "family",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-single-capgain-only",
+      "category": "investments",
+      "pass": true,
+      "compared": 209,
+      "matched": 209,
+      "mismatches": []
+    },
+    {
+      "id": "life-ss-wage-base-split",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-teacher-hoh",
+      "category": "family",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "life-two-job-overtime",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "mono-wages-step-40-to-41",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "mono-wages-step-41",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "odc-ssn-denied-child",
+      "category": "credits",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "pay-2210-penalty",
+      "category": "payments",
+      "pass": true,
+      "compared": 188,
+      "matched": 188,
+      "mismatches": []
+    },
+    {
+      "id": "pay-balance-due",
+      "category": "payments",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "pay-refund",
+      "category": "payments",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-car-over",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-ctc-mfj-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-ctc-other-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-ctc-other-over",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-eic-childless-done",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-ot-over",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-qbi-threshold-plus",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 236,
+      "matched": 236,
+      "mismatches": []
+    },
+    {
+      "id": "phase-salt-at-500k",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-salt-over-500k",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-senior-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-senior-over",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-tips-at",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "phase-tips-over",
+      "category": "boundaries",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "qbi-above-with-wages",
+      "category": "qbi",
+      "pass": true,
+      "compared": 236,
+      "matched": 236,
+      "mismatches": []
+    },
+    {
+      "id": "qbi-at-mfj-threshold",
+      "category": "qbi",
+      "pass": true,
+      "compared": 233,
+      "matched": 233,
+      "mismatches": []
+    },
+    {
+      "id": "qbi-below-threshold",
+      "category": "qbi",
+      "pass": true,
+      "compared": 258,
+      "matched": 258,
+      "mismatches": []
+    },
+    {
+      "id": "qbi-sstb-above-range",
+      "category": "qbi",
+      "pass": true,
+      "compared": 236,
+      "matched": 236,
+      "mismatches": []
+    },
+    {
+      "id": "qbi-sstb-phase-in",
+      "category": "qbi",
+      "pass": true,
+      "compared": 236,
+      "matched": 236,
+      "mismatches": []
+    },
+    {
+      "id": "rung-mfj-120000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-mfj-40000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-mfj-80000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-15000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-25000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-35000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-45000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-55000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-70000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-8000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-85000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "rung-single-95000",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "s1a-car-loan",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "s1a-mfs-tips-blocked",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "s1a-overtime-mfj-cap",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "s1a-overtime",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "s1a-tips-phaseout",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "s1a-tips",
+      "category": "schedule-1a",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "schd-collectibles-flagged",
+      "category": "schedule-d",
+      "pass": true,
+      "compared": 209,
+      "matched": 209,
+      "mismatches": []
+    },
+    {
+      "id": "schd-long-and-qd",
+      "category": "schedule-d",
+      "pass": true,
+      "compared": 209,
+      "matched": 209,
+      "mismatches": []
+    },
+    {
+      "id": "schd-loss-limit-mfs",
+      "category": "schedule-d",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "schd-loss-limit",
+      "category": "schedule-d",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "schd-short-gain",
+      "category": "schedule-d",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "se-cogs-meals",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 240,
+      "matched": 240,
+      "mismatches": []
+    },
+    {
+      "id": "se-employer-plan-blocks-health",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 233,
+      "matched": 233,
+      "mismatches": []
+    },
+    {
+      "id": "se-health-and-sep",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 233,
+      "matched": 233,
+      "mismatches": []
+    },
+    {
+      "id": "se-loss",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 227,
+      "matched": 227,
+      "mismatches": []
+    },
+    {
+      "id": "se-multiple-businesses",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 233,
+      "matched": 233,
+      "mismatches": []
+    },
+    {
+      "id": "se-profit",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 233,
+      "matched": 233,
+      "mismatches": []
+    },
+    {
+      "id": "se-under-400",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 227,
+      "matched": 227,
+      "mismatches": []
+    },
+    {
+      "id": "se-wage-base",
+      "category": "self-employment",
+      "pass": true,
+      "compared": 236,
+      "matched": 236,
+      "mismatches": []
+    },
+    {
+      "id": "senior-blind",
+      "category": "seniors",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "senior-deduction-phaseout",
+      "category": "seniors",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "senior-mfj-both",
+      "category": "seniors",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "senior-mfs-blocked",
+      "category": "seniors",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "senior-single-65",
+      "category": "seniors",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "status-hoh-std",
+      "category": "filing-status",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "status-mfj-std",
+      "category": "filing-status",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "status-mfs-std",
+      "category": "filing-status",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "status-qss-std",
+      "category": "filing-status",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "status-single-std",
+      "category": "filing-status",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "var-50k-hoh",
+      "category": "variants",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "var-50k-mfj",
+      "category": "variants",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "var-50k-mfs",
+      "category": "variants",
+      "pass": true,
+      "compared": 182,
+      "matched": 182,
+      "mismatches": []
+    },
+    {
+      "id": "var-50k-qss",
+      "category": "variants",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "var-50k-single",
+      "category": "variants",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-37-percent",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-addnl-medicare",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-niit",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-single-50k",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-spouse-ignored",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-two-earner-mfj",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-two-w2s",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    },
+    {
+      "id": "wages-zero-income",
+      "category": "wages",
+      "pass": true,
+      "compared": 184,
+      "matched": 184,
+      "mismatches": []
+    }
+  ]
+}

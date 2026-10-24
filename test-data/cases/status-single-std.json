@@ -1,0 +1,19 @@
+{
+  "id": "status-single-std",
+  "category": "filing-status",
+  "description": "Single filer, no income. Confirms the 2025 OBBBA standard deduction.",
+  "derivation": "Form 1040 (2025) p. 2 margin and i1040gi Standard Deduction Chart: single $15,750. Taxable income $0; Tax Table tax $0.",
+  "input": {
+    "filingStatus": "single"
+  },
+  "expected": {
+    "standardDeduction": 15750,
+    "form1040": {
+      "15": 0,
+      "16": 0,
+      "24": 0
+    },
+    "refund": 0,
+    "amountOwed": 0
+  }
+}

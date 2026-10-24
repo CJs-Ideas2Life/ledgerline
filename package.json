@@ -1,0 +1,30 @@
+{
+  "name": "ledgerline-tax-2025",
+  "version": "0.1.0",
+  "private": true,
+  "license": "AGPL-3.0-or-later",
+  "author": "The Ledgerline Authors",
+  "scripts": {
+    "dev": "next dev -p 3210",
+    "build": "next build",
+    "start": "next start -p 3210",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "e2e": "playwright test",
+    "scorecard": "vitest run tests/engine/writeScorecard.test.ts",
+    "screenshots": "npm run build && playwright test --config playwright.screenshots.config.ts"
+  },
+  "dependencies": {
+    "next": "^15.5.28",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "typescript": "5.9",
+    "vitest": "^4.1.12"
+  }
+}

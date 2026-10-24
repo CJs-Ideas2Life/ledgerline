@@ -1,0 +1,30 @@
+{
+  "id": "inv-qd-15pct",
+  "category": "investments",
+  "description": "Single, $60,000 wages plus $20,000 qualified dividends — 15% band.",
+  "derivation": "TI = 80,000 − 15,750 = 64,250. QDCG: ordinary TI = 44,250; 0% room = 48,350 − 44,250 = 4,100; 15% on 15,900 = $2,385. Ordinary tax on $44,250 (table row 44,250–44,300 mid 44,275): $1,192.50 + 12% × 32,350 = $5,074.50 → $5,075. Combined $7,460.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 60000,
+        "federalWithholding": 8000,
+        "socialSecurityWages": 60000,
+        "medicareWages": 60000,
+        "medicareTax": 870
+      }
+    ],
+    "dividends": [
+      {
+        "payer": "Broker",
+        "ordinary": 20000,
+        "qualified": 20000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 64250
+    },
+    "taxMethod": "qdcg-worksheet"
+  }
+}

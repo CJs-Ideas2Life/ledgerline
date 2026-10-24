@@ -1,0 +1,32 @@
+{
+  "id": "amt-salt-no-amt",
+  "category": "amt",
+  "description": "High-SALT itemizer ($40,000 SALT on $400,000 AGI) — AMTI is computed, but TMT is under regular tax.",
+  "derivation": "Form 6251: line 1b = TI $340,000; line 2a = Sch. A taxes $40,000; AMTI $380,000; exemption $88,100 (RP 2024-40 § 3.11 / Form 6251 line 5). Line 6 = $291,900. 28% × 291,900 − $4,782 = $76,950 < regular tax $88,547 → AMT $0. Demonstrates the $40,000 SALT addback.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 400000,
+        "federalWithholding": 90000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 400000,
+        "medicareTax": 7600
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 40000,
+      "mortgageInterest1098": 20000
+    }
+  },
+  "expected": {
+    "form6251": {
+      "4": 380000,
+      "5": 88100,
+      "11": 0,
+      "2a": 40000
+    },
+    "scheduleA": {
+      "5e": 40000
+    }
+  }
+}

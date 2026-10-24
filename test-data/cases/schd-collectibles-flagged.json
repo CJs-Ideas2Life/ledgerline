@@ -1,0 +1,26 @@
+{
+  "id": "schd-collectibles-flagged",
+  "category": "schedule-d",
+  "description": "Long-term collectibles gain is included in Schedule D but the 28% worksheet is not computed.",
+  "derivation": "Schedule D line 15 includes the $4,000 gain. Form 6251 / 28% Rate Gain Worksheet is unsupported — warning required. Gain still flows to line 7 and the 0/15/20% QDCG worksheet.",
+  "input": {
+    "capitalGains": [
+      {
+        "description": "Gold coins",
+        "term": "long",
+        "proceeds": 6000,
+        "cost": 2000,
+        "collectible": true
+      }
+    ]
+  },
+  "expected": {
+    "scheduleD": {
+      "15": 4000,
+      "21": 4000
+    },
+    "warningsIncludes": [
+      "Collectibles"
+    ]
+  }
+}

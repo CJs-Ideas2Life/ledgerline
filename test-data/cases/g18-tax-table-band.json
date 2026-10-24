@@ -1,0 +1,25 @@
+{
+  "id": "g18-tax-table-band",
+  "category": "brackets",
+  "description": "Single, taxable income $34,250 and the $34,250–$34,300 Tax Table row (G18).",
+  "derivation": "Wages $50,000, std $15,750, TI $34,250. Tax Table row $34,250–$34,300 midpoint $34,275: $1,192.50 + 12% × ($34,275 − $11,925) = $3,874.50 → $3,875. The same tax applies to every dollar in the row.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 6000,
+        "socialSecurityWages": 50000,
+        "socialSecurityTax": 3100,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 34250,
+      "16": 3875
+    },
+    "taxMethod": "table"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "life-mfs-lived-apart-eic",
+  "category": "credits",
+  "description": "MFS, lived apart last 6 months, one EIC child, $22,000 wages.",
+  "derivation": "§ 32(d) exception. 1 child, unmarried phase-out start $23,350 so $22,000 is still in the plateau. Max credit $4,328 (RP 2024-40 § 3.06). Std 15,750. TI 6,250.",
+  "input": {
+    "filingStatus": "mfs",
+    "mfsLivedApart": true,
+    "dependents": [
+      {
+        "firstName": "Kid",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 22000,
+        "federalWithholding": 800,
+        "socialSecurityWages": 22000,
+        "socialSecurityTax": 1364,
+        "medicareWages": 22000,
+        "medicareTax": 319
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 6250,
+      "27a": 4328
+    }
+  }
+}

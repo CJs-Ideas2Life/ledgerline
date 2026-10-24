@@ -1,0 +1,57 @@
+{
+  "id": "life-nurse-mfj",
+  "category": "family",
+  "description": "Two-earner MFJ nurses, $78,000 + $64,000, two kids under 17, $18,000 withheld.",
+  "derivation": "Wages $142,000. Std $31,500. TI $110,500. Worksheet tax $14138. CTC $4,400. No EIC (phaseout complete $57,554 for 2 children joint).",
+  "input": {
+    "filingStatus": "mfj",
+    "taxpayer": {
+      "firstName": "Priya"
+    },
+    "spouse": {
+      "firstName": "Owen"
+    },
+    "dependents": [
+      {
+        "firstName": "Ava",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "Noah",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 78000,
+        "federalWithholding": 10000,
+        "socialSecurityWages": 78000,
+        "socialSecurityTax": 4836,
+        "medicareWages": 78000,
+        "medicareTax": 1131,
+        "owner": "taxpayer"
+      },
+      {
+        "wages": 64000,
+        "federalWithholding": 8000,
+        "socialSecurityWages": 64000,
+        "socialSecurityTax": 3968,
+        "medicareWages": 64000,
+        "medicareTax": 928,
+        "owner": "spouse"
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 110500,
+      "16": 14138,
+      "19": 4400,
+      "1z": 142000,
+      "27a": 0
+    },
+    "taxMethod": "computation-worksheet"
+  }
+}

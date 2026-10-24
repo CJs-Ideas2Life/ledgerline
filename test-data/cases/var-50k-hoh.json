@@ -1,0 +1,35 @@
+{
+  "id": "var-50k-hoh",
+  "category": "variants",
+  "description": "Same $50,000 W-2 facts filed as hoh. Metamorphic filing-status variant.",
+  "derivation": "Std 23625 (Form 1040 2025). TI = 50,000 − 23625 = 26375. Tax Table midpoint → $2825 (RP 2024-40 § 3.01).",
+  "input": {
+    "filingStatus": "hoh",
+    "dependents": [
+      {
+        "firstName": "Pat",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 50000,
+        "socialSecurityTax": 3100,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 23625,
+    "form1040": {
+      "15": 26375,
+      "16": 2825,
+      "1z": 50000
+    },
+    "taxMethod": "table"
+  }
+}

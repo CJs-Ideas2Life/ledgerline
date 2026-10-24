@@ -1,0 +1,46 @@
+{
+  "id": "ctc-three-kids-part2b",
+  "category": "credits",
+  "description": "MFJ, three qualifying children, only $4,000 of wages — Part II-B ACTC, reduced by EIC.",
+  "derivation": "Line 20 = 15% × $1,500 = $225. Line 21 withheld SS/Medicare = $248 + $58 = $306. EIC table $4,000–$4,050 midpoint $4,025 × 45% = $1,811. Line 25 = pos(306 − 1,811) = 0. ACTC = min($5,100 unused, max(225, 0)) = $225.",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 4000,
+        "socialSecurityWages": 4000,
+        "socialSecurityTax": 248,
+        "medicareWages": 4000,
+        "medicareTax": 58
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "B",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "C",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "schedule8812": {
+      "20": 225,
+      "21": 306,
+      "24": 1811
+    },
+    "form1040": {
+      "28": 225,
+      "27a": 1811
+    }
+  }
+}

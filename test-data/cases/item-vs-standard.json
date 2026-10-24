@@ -1,0 +1,26 @@
+{
+  "id": "item-vs-standard",
+  "category": "itemized",
+  "description": "Mortgage interest $8,000 is smaller than the $15,750 standard deduction, so standard is used unless elected.",
+  "derivation": "Form 1040 line 12e takes the larger of standard and itemized. $8,000 < $15,750 → standard. forceItemize is off.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 70000,
+        "federalWithholding": 8000,
+        "socialSecurityWages": 70000,
+        "medicareWages": 70000,
+        "medicareTax": 1015
+      }
+    ],
+    "itemized": {
+      "mortgageInterest1098": 8000
+    }
+  },
+  "expected": {
+    "usesItemized": false,
+    "form1040": {
+      "12e": 15750
+    }
+  }
+}

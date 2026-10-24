@@ -1,0 +1,42 @@
+{
+  "id": "g9-qss-niit-vs-addmed",
+  "category": "other-tax",
+  "description": "QSS with $220,000 Medicare wages and $10,000 taxable interest — Additional Medicare uses $200k, NIIT uses $250k (G9).",
+  "derivation": "Form 8959 threshold for QSS is $200,000: 0.9% × $20,000 = $180. Form 8960 NIIT threshold for QSS is $250,000; MAGI $230,000 is under it, so NIIT is $0. MFJ would have used $250,000 for both.",
+  "input": {
+    "filingStatus": "qss",
+    "dependents": [
+      {
+        "firstName": "Kid",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 220000,
+        "federalWithholding": 45000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 220000,
+        "medicareTax": 3370
+      }
+    ],
+    "interest": [
+      {
+        "payer": "Bank",
+        "taxable": 10000
+      }
+    ]
+  },
+  "expected": {
+    "form8959": {
+      "5": 200000,
+      "6": 20000,
+      "7": 180
+    },
+    "form8960": {
+      "14": 250000,
+      "17": 0
+    }
+  }
+}

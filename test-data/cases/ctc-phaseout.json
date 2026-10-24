@@ -1,0 +1,32 @@
+{
+  "id": "ctc-phaseout",
+  "category": "credits",
+  "description": "MFJ AGI $412,500, one qualifying child — phase-out rounds up to the next $1,000.",
+  "derivation": "Schedule 8812 lines 9–11: excess $12,500 → rounded up to $13,000 × 5% = $650. Credit 2,200 − 650 = $1,550.",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 412500,
+        "federalWithholding": 80000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 412500,
+        "medicareTax": 7891
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "schedule8812": {
+      "10": 13000,
+      "11": 650,
+      "12": 1550
+    }
+  }
+}

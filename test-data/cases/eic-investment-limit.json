@@ -1,0 +1,34 @@
+{
+  "id": "eic-investment-limit",
+  "category": "credits",
+  "description": "Otherwise-eligible parent with $12,000 of taxable interest — EIC disallowed.",
+  "derivation": "RP 2024-40 § 3.06(2): EIC is not allowed if investment income exceeds $11,950.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 10000,
+        "socialSecurityWages": 10000,
+        "medicareWages": 10000,
+        "medicareTax": 145
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "interest": [
+      {
+        "payer": "Bank",
+        "taxable": 12000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "27a": 0
+    }
+  }
+}

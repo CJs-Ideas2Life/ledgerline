@@ -1,0 +1,23 @@
+{
+  "id": "se-multiple-businesses",
+  "category": "self-employment",
+  "description": "Two Schedule C businesses, same owner, combined on one Schedule SE.",
+  "derivation": "Profits $30,000 + $20,000 = $50,000. One Schedule SE. Combined net earnings 50,000 × 92.35% = $46,175. SS $5,726 + Medicare $1,339 = $7,065.",
+  "input": {
+    "businesses": [
+      {
+        "name": "A",
+        "grossReceipts": 30000
+      },
+      {
+        "name": "B",
+        "grossReceipts": 20000
+      }
+    ]
+  },
+  "expected": {
+    "schedule2": {
+      "4": 7065
+    }
+  }
+}

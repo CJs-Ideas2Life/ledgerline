@@ -1,0 +1,30 @@
+{
+  "id": "life-charity-carry-only",
+  "category": "itemized",
+  "description": "Single $90,000 wages, $2,000 cash gifts plus $8,000 charity carryover — carry used inside the 60% cap.",
+  "derivation": "Cash $2,000 under 60% of 90,000 ($54,000). Carry $8,000 also fits. Total gifts $10,000. Combined with $0 other itemized, still under standard $15,750 unless we add mortgage.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 90000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 90000,
+        "socialSecurityTax": 5580,
+        "medicareWages": 90000,
+        "medicareTax": 1305
+      }
+    ],
+    "itemized": {
+      "charityCash": 2000,
+      "charityCarryover": 8000,
+      "mortgageInterest1098": 9000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "11": 2000,
+      "13": 8000,
+      "14": 10000
+    }
+  }
+}

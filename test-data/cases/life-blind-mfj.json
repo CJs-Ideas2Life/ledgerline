@@ -1,0 +1,29 @@
+{
+  "id": "life-blind-mfj",
+  "category": "seniors-dependent",
+  "description": "MFJ, both under 65, taxpayer blind — extra $1,600 standard deduction.",
+  "derivation": "31,500 + 1,600 = $33,100. RP 2024-40 § 3.15(3). Wages $40,000. TI 6,900.",
+  "input": {
+    "filingStatus": "mfj",
+    "taxpayer": {
+      "blind": true
+    },
+    "w2s": [
+      {
+        "wages": 40000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 40000,
+        "socialSecurityTax": 2480,
+        "medicareWages": 40000,
+        "medicareTax": 580
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 33100,
+    "form1040": {
+      "15": 6900,
+      "16": 693
+    }
+  }
+}

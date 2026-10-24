@@ -1,0 +1,25 @@
+{
+  "id": "bound-12-22-single-plus",
+  "category": "boundaries",
+  "description": "Single filer, taxable income 48476 (bracket edge 48475 plus).",
+  "derivation": "Wages 64226 − std 15,750 = TI 48476. Tax Table tax $5579. RP 2024-40 § 3.01 single schedule.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 64226,
+        "federalWithholding": 0,
+        "socialSecurityWages": 64226,
+        "socialSecurityTax": 3982,
+        "medicareWages": 64226,
+        "medicareTax": 931
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 48476,
+      "16": 5579
+    },
+    "taxMethod": "table"
+  }
+}

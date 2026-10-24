@@ -1,0 +1,25 @@
+{
+  "id": "rung-single-35000",
+  "category": "wages",
+  "description": "Single W-2 of $35,000 — Tax Table rung.",
+  "derivation": "TI 19250. Table tax $2075. RP 2024-40 § 3.01 / i1040gi Tax Table.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 35000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 35000,
+        "socialSecurityTax": 2170,
+        "medicareWages": 35000,
+        "medicareTax": 508
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 19250,
+      "16": 2075
+    },
+    "taxMethod": "table"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "id": "wages-two-w2s",
+  "category": "wages",
+  "description": "Single filer with two W-2s ($30,000 and $20,000), same $50,000 wages as the one-job case.",
+  "derivation": "Wages stack on line 1a/1z. TI and tax match wages-single-50k. Withholding $3,000 + $3,000 = $6,000 → refund $2,125.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 30000,
+        "federalWithholding": 3000,
+        "socialSecurityWages": 30000,
+        "socialSecurityTax": 1860,
+        "medicareWages": 30000,
+        "medicareTax": 435
+      },
+      {
+        "wages": 20000,
+        "federalWithholding": 3000,
+        "socialSecurityWages": 20000,
+        "socialSecurityTax": 1240,
+        "medicareWages": 20000,
+        "medicareTax": 290
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 34250,
+      "16": 3875,
+      "1z": 50000
+    },
+    "refund": 2125
+  }
+}

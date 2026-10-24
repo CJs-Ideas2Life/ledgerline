@@ -1,0 +1,23 @@
+{
+  "id": "phase-eic-childless-done",
+  "category": "boundaries",
+  "description": "Single childless EIC just at the completed-phaseout $19,104 — credit $0.",
+  "derivation": "RP 2024-40 § 3.06 completed phaseout (0 children, unmarried) $19,104.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 19104,
+        "federalWithholding": 0,
+        "socialSecurityWages": 19104,
+        "socialSecurityTax": 1184,
+        "medicareWages": 19104,
+        "medicareTax": 277
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "27a": 0
+    }
+  }
+}

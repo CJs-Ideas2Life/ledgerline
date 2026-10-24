@@ -1,0 +1,111 @@
+{
+  "id": "family-rivera-sample",
+  "category": "family",
+  "description": "The Rivera household: MFJ, two children, one W-2, interest and dividends, spouse’s design studio, itemized deductions, $6,000 of estimates.",
+  "derivation": "Hand-checked in tests/engine/return.test.ts against 2025 forms: Sch. C $57,500; AGI $155,987; itemized $35,000; QBI $10,687; TI $110,300; QDCG tax $13,940; CTC $4,400; SE tax $8,125; total tax $17,665; payments $15,800; owed $1,865. MAGI is far above the EIC phase-out. AMT TMT is under regular tax (SALT addback $17,300).",
+  "input": {
+    "filingStatus": "mfj",
+    "taxpayer": {
+      "firstName": "Alex",
+      "lastName": "Rivera"
+    },
+    "spouse": {
+      "firstName": "Jordan",
+      "lastName": "Rivera"
+    },
+    "dependents": [
+      {
+        "firstName": "Sam",
+        "relationship": "Son",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "Riley",
+        "relationship": "Daughter",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "employer": "Northwind Logistics",
+        "wages": 98000,
+        "federalWithholding": 9800,
+        "socialSecurityWages": 98000,
+        "socialSecurityTax": 6076,
+        "medicareWages": 98000,
+        "medicareTax": 1421
+      }
+    ],
+    "interest": [
+      {
+        "payer": "Prairie Savings Bank",
+        "taxable": 1850
+      },
+      {
+        "payer": "City Muni Bond Fund",
+        "taxExempt": 400
+      }
+    ],
+    "dividends": [
+      {
+        "payer": "Lakeshore Brokerage",
+        "ordinary": 2400,
+        "qualified": 1900,
+        "capitalGainDistributions": 300
+      }
+    ],
+    "businesses": [
+      {
+        "name": "Rivera Design Studio",
+        "owner": "spouse",
+        "grossReceipts": 72000,
+        "hasInventory": true,
+        "cogs": {
+          "beginningInventory": 2000,
+          "purchases": 6000,
+          "endingInventory": 1500
+        },
+        "expenses": {
+          "advertising": 1200,
+          "insurance": 1200,
+          "legalProfessional": 900,
+          "officeExpense": 1500,
+          "supplies": 800,
+          "travel": 800,
+          "mealsTotal": 1000,
+          "utilities": 1100
+        }
+      }
+    ],
+    "itemized": {
+      "medical": 4000,
+      "stateLocalIncomeOrSalesTax": 9500,
+      "realEstateTax": 7800,
+      "mortgageInterest1098": 14200,
+      "charityCash": 3000,
+      "charityNonCash": 500
+    },
+    "estimatedPayments": 6000
+  },
+  "expected": {
+    "form1040": {
+      "9": 160050,
+      "10": 4063,
+      "15": 110300,
+      "16": 13940,
+      "19": 4400,
+      "23": 8125,
+      "24": 17665,
+      "33": 15800,
+      "37": 1865,
+      "11b": 155987,
+      "12e": 35000,
+      "13a": 10687
+    },
+    "usesItemized": true,
+    "amountOwed": 1865,
+    "refund": 0
+  }
+}

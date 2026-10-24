@@ -1,0 +1,27 @@
+{
+  "id": "item-salt-cap",
+  "category": "itemized",
+  "description": "Single, $100,000 wages, $45,000 of SALT — capped at $40,000.",
+  "derivation": "Schedule A (2025) line 5e / State and Local Tax Deduction Worksheet: $40,000 cap [OBBBA § 70120] applies at or below $500,000 MAGI. 5d = $45,000 → 5e = $40,000.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 100000,
+        "federalWithholding": 18000,
+        "socialSecurityWages": 100000,
+        "medicareWages": 100000,
+        "medicareTax": 1450
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 30000,
+      "realEstateTax": 15000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "5d": 45000,
+      "5e": 40000
+    }
+  }
+}

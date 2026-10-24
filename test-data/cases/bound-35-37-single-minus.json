@@ -1,0 +1,25 @@
+{
+  "id": "bound-35-37-single-minus",
+  "category": "boundaries",
+  "description": "Single filer, taxable income 626349 (bracket edge 626350 minus).",
+  "derivation": "Wages 642099 − std 15,750 = TI 626349. Worksheet tax $188769. RP 2024-40 § 3.01 single schedule.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 642099,
+        "federalWithholding": 0,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 642099,
+        "medicareTax": 9310
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 626349,
+      "16": 188769
+    },
+    "taxMethod": "computation-worksheet"
+  }
+}

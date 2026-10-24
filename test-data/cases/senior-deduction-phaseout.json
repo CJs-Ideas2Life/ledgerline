@@ -1,0 +1,29 @@
+{
+  "id": "senior-deduction-phaseout",
+  "category": "seniors",
+  "description": "Single, 65+, MAGI $95,000 — 6% phase-down of the $6,000 senior deduction.",
+  "derivation": "Sch. 1-A lines 33–35: excess $20,000 × 6% = $1,200; $6,000 − $1,200 = $4,800. Std $17,750. TI = 95,000 − 17,750 − 4,800 = $72,450.",
+  "input": {
+    "taxpayer": {
+      "bornBefore1961": true
+    },
+    "w2s": [
+      {
+        "wages": 95000,
+        "federalWithholding": 12000,
+        "socialSecurityWages": 95000,
+        "medicareWages": 95000,
+        "medicareTax": 1378
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "35": 4800
+    },
+    "form1040": {
+      "15": 72450,
+      "13b": 4800
+    }
+  }
+}

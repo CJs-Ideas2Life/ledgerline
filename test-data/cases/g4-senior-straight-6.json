@@ -1,0 +1,29 @@
+{
+  "id": "g4-senior-straight-6",
+  "category": "schedule-1a",
+  "description": "Single senior, MAGI $75,500 — senior deduction uses straight 6%, no $1,000 banding (G4).",
+  "derivation": "Part V: excess $500 × 6% = $30. Deduction $6,000 − $30 = $5,970. Not floored or ceiled to a $1,000 band.",
+  "input": {
+    "taxpayer": {
+      "bornBefore1961": true
+    },
+    "w2s": [
+      {
+        "wages": 75500,
+        "federalWithholding": 8000,
+        "socialSecurityWages": 75500,
+        "socialSecurityTax": 4681,
+        "medicareWages": 75500,
+        "medicareTax": 1095
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "33": 500,
+      "34": 30,
+      "35": 5970,
+      "37": 5970
+    }
+  }
+}

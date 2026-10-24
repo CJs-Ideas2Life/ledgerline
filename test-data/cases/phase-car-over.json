@@ -1,0 +1,24 @@
+{
+  "id": "phase-car-over",
+  "category": "boundaries",
+  "description": "Single, $4,000 car-loan interest, MAGI $101,500 — ceiling reduction.",
+  "derivation": "ceil(1500/1000)×$200 = $400. 4,000 − 400 = $3,600. 1-A Part IV uses the ceiling. OBBBA § 70203.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 101500,
+        "federalWithholding": 0,
+        "socialSecurityWages": 101500,
+        "socialSecurityTax": 6293,
+        "medicareWages": 101500,
+        "medicareTax": 1472
+      }
+    ],
+    "carLoanInterest": 4000
+  },
+  "expected": {
+    "schedule1A": {
+      "30": 3600
+    }
+  }
+}

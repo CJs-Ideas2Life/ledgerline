@@ -1,0 +1,23 @@
+{
+  "id": "qbi-sstb-above-range",
+  "category": "qbi",
+  "description": "Same profit as qbi-above-with-wages but the trade is an SSTB — fully excluded.",
+  "derivation": "Form 8995-A instructions: an SSTB is not a qualified trade or business once taxable income exceeds the threshold plus the $50,000 phase-in range ($247,300 single). QBI deduction $0.",
+  "input": {
+    "businesses": [
+      {
+        "grossReceipts": 380000,
+        "expenses": {
+          "wages": 80000
+        },
+        "ubia": 200000,
+        "isSstb": true
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "13a": 0
+    }
+  }
+}

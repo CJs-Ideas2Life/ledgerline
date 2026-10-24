@@ -1,0 +1,28 @@
+{
+  "id": "life-retiree-interest",
+  "category": "family",
+  "description": "Single retiree born before 1961, $28,000 taxable interest, no wages.",
+  "derivation": "Std 15,750 + $2,000 additional = $17,750. Senior deduction $6,000 (MAGI 28,000 < 75,000). TI = 28,000 − 17,750 − 6,000 = 4,250. Table tax on 4250–4300 midpoint 4275 × 10% = $428. No EIC (age 65+ childless).",
+  "input": {
+    "taxpayer": {
+      "bornBefore1961": true,
+      "hasValidSSN": true
+    },
+    "interest": [
+      {
+        "payer": "Credit union",
+        "taxable": 28000
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 17750,
+    "form1040": {
+      "15": 4250,
+      "16": 428,
+      "2b": 28000,
+      "13b": 6000,
+      "27a": 0
+    }
+  }
+}

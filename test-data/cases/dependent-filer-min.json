@@ -1,0 +1,20 @@
+{
+  "id": "dependent-filer-min",
+  "category": "seniors",
+  "description": "Dependent filer with $500 of wages — $1,350 standard deduction floor.",
+  "derivation": "i1040gi p. 35 dependents worksheet: greater of $1,350 or earned income + $450, capped at the basic standard deduction. $500 + $450 = $950 → floor $1,350.",
+  "input": {
+    "canBeClaimedAsDependent": true,
+    "w2s": [
+      {
+        "wages": 500,
+        "socialSecurityWages": 500,
+        "medicareWages": 500,
+        "medicareTax": 7
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 1350
+  }
+}

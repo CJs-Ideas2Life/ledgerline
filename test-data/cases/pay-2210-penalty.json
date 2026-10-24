@@ -1,0 +1,24 @@
+{
+  "id": "pay-2210-penalty",
+  "category": "payments",
+  "description": "Same $150,000 wage return with last year’s tax entered and only $5,000 withheld — Form 2210 penalty applies.",
+  "derivation": "Required annual payment = lesser of 90% of 2025 tax or 100% of 2024 tax $20,000 (AGI last year $140,000, not high-income). Payments $5,000 < required. Equal-installment regular method at 7% (2025 Form 2210; quarterly rates all 7%). Line 38 > 0 and is added to the amount owed.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 150000,
+        "federalWithholding": 5000,
+        "socialSecurityWages": 150000,
+        "medicareWages": 150000,
+        "medicareTax": 2175
+      }
+    ],
+    "priorYearTax": 20000,
+    "priorYearAgi": 140000
+  },
+  "expected": {
+    "form1040": {
+      "38": "GT0"
+    }
+  }
+}

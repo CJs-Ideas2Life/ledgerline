@@ -1,0 +1,24 @@
+name: Bug report
+description: Report a problem with Ledgerline
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ledgerline is an educational and tax-preparation aid. It is not tax advice
+        and is not affiliated with the IRS. For security problems, use private
+        vulnerability reporting instead of this form.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: Steps to reproduce and what you expected.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Latest release tag or commit SHA.
+    validations:
+      required: true

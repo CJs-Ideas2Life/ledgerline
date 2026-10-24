@@ -1,0 +1,24 @@
+{
+  "id": "mono-wages-step-40-to-41",
+  "category": "boundaries",
+  "description": "Single, $40,000 vs the $41,000 companion case — tax before credits must not fall.",
+  "derivation": "Metamorphic pair. TI 24,250 vs 25,250. Both in the 12% table region. Tax is non-decreasing (property test also covers this).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 40000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 40000,
+        "socialSecurityTax": 2480,
+        "medicareWages": 40000,
+        "medicareTax": 580
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 24250,
+      "16": 2675
+    }
+  }
+}

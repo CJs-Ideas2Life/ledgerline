@@ -1,0 +1,26 @@
+{
+  "id": "item-salt-mfs-half",
+  "category": "itemized",
+  "description": "MFS, AGI $300,000, $30,000 SALT — worksheet halves line 9.",
+  "derivation": "40,000 − 30% × (300,000 − 250,000) = $25,000; half if MFS = $12,500 (Schedule A instr. worksheet line 10).",
+  "input": {
+    "filingStatus": "mfs",
+    "w2s": [
+      {
+        "wages": 300000,
+        "federalWithholding": 70000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 300000,
+        "medicareTax": 5250
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 30000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "5e": 12500
+    }
+  }
+}

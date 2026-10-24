@@ -1,0 +1,44 @@
+{
+  "id": "ctc-two-kids-mfj",
+  "category": "credits",
+  "description": "MFJ, $150,000 wages, two qualifying children and one other dependent.",
+  "derivation": "Schedule 8812 (2025): 2 × $2,200 + 1 × $500 = $4,900 (lines 5, 7, 8). MAGI under $400,000 → no phase-out. Nonrefundable credit limited by tax; here tax > $4,900 so line 19 = $4,900.",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 150000,
+        "federalWithholding": 18000,
+        "socialSecurityWages": 150000,
+        "medicareWages": 150000,
+        "medicareTax": 2175
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "B",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "C",
+        "under17": false,
+        "eicQualifying": false
+      }
+    ]
+  },
+  "expected": {
+    "schedule8812": {
+      "5": 4400,
+      "7": 500
+    },
+    "form1040": {
+      "19": 4900
+    }
+  }
+}

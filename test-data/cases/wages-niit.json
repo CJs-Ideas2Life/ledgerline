@@ -1,0 +1,33 @@
+{
+  "id": "wages-niit",
+  "category": "wages",
+  "description": "Single, $190,000 wages plus $40,000 taxable interest — NIIT applies.",
+  "derivation": "AGI $230,000. Form 8960: NII $40,000; MAGI over $200,000 = $30,000; tax = 3.8% × $30,000 = $1,140 (2025 Form 8960 instructions, line 14 threshold / line 17 rate).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 190000,
+        "federalWithholding": 40000,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 190000,
+        "medicareTax": 2755
+      }
+    ],
+    "interest": [
+      {
+        "payer": "Bank",
+        "taxable": 40000
+      }
+    ]
+  },
+  "expected": {
+    "form8960": {
+      "16": 30000,
+      "17": 1140
+    },
+    "schedule2": {
+      "12": 1140
+    }
+  }
+}

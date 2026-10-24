@@ -1,0 +1,22 @@
+{
+  "id": "se-employer-plan-blocks-health",
+  "category": "self-employment",
+  "description": "Same studio, but the taxpayer could have enrolled in an employer plan.",
+  "derivation": "Pub. 535: SE health insurance is not deductible if eligible for an employer-sponsored plan. Line 17 = $0. SEP still allowed.",
+  "input": {
+    "coveredByEmployerHealthPlan": true,
+    "businesses": [
+      {
+        "grossReceipts": 57500,
+        "seHealthInsurance": 6000,
+        "sepOrSoloEmployer": 50000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1": {
+      "16": 10687,
+      "17": 0
+    }
+  }
+}

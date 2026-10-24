@@ -1,0 +1,24 @@
+{
+  "id": "s1a-overtime-mfj-cap",
+  "category": "schedule-1a",
+  "description": "MFJ, $20,000 qualified overtime — under the $25,000 joint cap.",
+  "derivation": "Line 15 uses the $25,000 MFJ cap, so the full $20,000 is allowed (MAGI $50,000).",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725,
+        "qualifiedOvertime": 20000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "21": 20000
+    }
+  }
+}

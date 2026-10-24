@@ -1,0 +1,27 @@
+{
+  "id": "pay-balance-due",
+  "category": "payments",
+  "description": "Single, $150,000 wages, $20,000 withheld — balance due, no 2210 because prior-year tax was not entered.",
+  "derivation": "TI $134,250. Tax Computation Worksheet: 134,250 × 24% − $7,153 = $25,067. Owed $5,067. Form 2210 is computed only when 2024 tax is entered (otherwise the IRS bills any penalty).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 150000,
+        "federalWithholding": 20000,
+        "socialSecurityWages": 150000,
+        "medicareWages": 150000,
+        "medicareTax": 2175
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "16": 25067,
+      "37": 5067,
+      "38": 0
+    },
+    "amountOwed": 5067,
+    "refund": 0,
+    "taxMethod": "computation-worksheet"
+  }
+}

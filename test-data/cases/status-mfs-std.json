@@ -1,0 +1,16 @@
+{
+  "id": "status-mfs-std",
+  "category": "filing-status",
+  "description": "Married filing separately, no income.",
+  "derivation": "Form 1040 (2025) standard deduction MFS $15,750 (same as single).",
+  "input": {
+    "filingStatus": "mfs"
+  },
+  "expected": {
+    "standardDeduction": 15750,
+    "form1040": {
+      "15": 0,
+      "16": 0
+    }
+  }
+}

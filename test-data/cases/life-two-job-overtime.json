@@ -1,0 +1,35 @@
+{
+  "id": "life-two-job-overtime",
+  "category": "wages",
+  "description": "Single warehouse worker, two W-2s ($22,000 and $31,000) plus $3,400 qualified overtime on the second job.",
+  "derivation": "Wages $53,000. OT deduction $3,400 (under $12,500, MAGI under $150k). Std 15,750. TI = 53,000 − 15,750 − 3,400 = 33,850. Table tax 3827.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 22000,
+        "federalWithholding": 1800,
+        "socialSecurityWages": 22000,
+        "socialSecurityTax": 1364,
+        "medicareWages": 22000,
+        "medicareTax": 319
+      },
+      {
+        "wages": 31000,
+        "federalWithholding": 2600,
+        "socialSecurityWages": 31000,
+        "socialSecurityTax": 1922,
+        "medicareWages": 31000,
+        "medicareTax": 450,
+        "qualifiedOvertime": 3400
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 33850,
+      "16": 3827,
+      "1z": 53000,
+      "13b": 3400
+    }
+  }
+}

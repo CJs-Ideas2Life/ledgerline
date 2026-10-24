@@ -1,0 +1,26 @@
+{
+  "id": "item-medical-floor",
+  "category": "itemized",
+  "description": "AGI $80,000, medical $10,000 — only the excess over 7.5% counts.",
+  "derivation": "Schedule A (2025) line 3: 7.5% × 80,000 = $6,000. Line 4 = $4,000.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 80000,
+        "federalWithholding": 10000,
+        "socialSecurityWages": 80000,
+        "medicareWages": 80000,
+        "medicareTax": 1160
+      }
+    ],
+    "itemized": {
+      "medical": 10000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "3": 6000,
+      "4": 4000
+    }
+  }
+}

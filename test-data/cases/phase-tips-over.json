@@ -1,0 +1,24 @@
+{
+  "id": "phase-tips-over",
+  "category": "boundaries",
+  "description": "Single, $10,000 tips, MAGI $151,000 — floor($1,000/$1,000)×$100 = $100 cut.",
+  "derivation": "1-A lines 10–13 use the floor. $10,000 − $100 = $9,900.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 151000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 151000,
+        "socialSecurityTax": 9362,
+        "medicareWages": 151000,
+        "medicareTax": 2190,
+        "qualifiedTips": 10000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "13": 9900
+    }
+  }
+}

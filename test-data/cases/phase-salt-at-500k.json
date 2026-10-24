@@ -1,0 +1,27 @@
+{
+  "id": "phase-salt-at-500k",
+  "category": "boundaries",
+  "description": "AGI $500,000, $50,000 SALT — still the $40,000 cap.",
+  "derivation": "Worksheet line 5 = $500,000; excess 0. Cap $40,000. Sch. A instr. p. 7.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 500000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 500000,
+        "medicareTax": 7250
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 50000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "5d": 50000,
+      "5e": 40000
+    }
+  }
+}

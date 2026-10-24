@@ -1,0 +1,26 @@
+{
+  "id": "phase-salt-over-500k",
+  "category": "boundaries",
+  "description": "AGI $510,000, $50,000 SALT — 30% × $10,000 = $3,000 cut.",
+  "derivation": "40,000 − 0.30 × 10,000 = $37,000. Sch. A SALT worksheet lines 6–10.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 510000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 510000,
+        "medicareTax": 7395
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 50000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "5e": 37000
+    }
+  }
+}

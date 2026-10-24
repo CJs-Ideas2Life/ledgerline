@@ -1,0 +1,34 @@
+{
+  "id": "inv-schb-threshold",
+  "category": "investments",
+  "description": "Taxable interest $1,501 — Schedule B is required (over $1,500).",
+  "derivation": "Schedule B (2025) Parts I/II notes and i1040gi lines 2b/3b: file Schedule B when taxable interest or ordinary dividends exceed $1,500. Line 2b = $1,501.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 40000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 40000,
+        "medicareWages": 40000,
+        "medicareTax": 580
+      }
+    ],
+    "interest": [
+      {
+        "payer": "Bank",
+        "taxable": 1501
+      }
+    ]
+  },
+  "expected": {
+    "scheduleB": {
+      "4": 1501
+    },
+    "form1040": {
+      "2b": 1501
+    },
+    "warningsIncludes": [
+      "Schedule B is required"
+    ]
+  }
+}

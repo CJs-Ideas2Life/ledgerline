@@ -1,0 +1,37 @@
+{
+  "id": "schd-short-gain",
+  "category": "schedule-d",
+  "description": "Single wage earner sells stock held 4 months for a $3,000 short-term gain.",
+  "derivation": "Form 8949 short-term: proceeds 8,000 − cost 5,000 = $3,000. Schedule D line 7 = $3,000; line 16 = $3,000; 1040 line 7 = $3,000. AGI = 63,000. No preferential rate (short-term). TI = 47,250.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 60000,
+        "federalWithholding": 7000,
+        "socialSecurityWages": 60000,
+        "medicareWages": 60000,
+        "medicareTax": 870
+      }
+    ],
+    "capitalGains": [
+      {
+        "description": "ST stock",
+        "term": "short",
+        "proceeds": 8000,
+        "cost": 5000
+      }
+    ]
+  },
+  "expected": {
+    "scheduleD": {
+      "7": 3000,
+      "16": 3000,
+      "21": 3000
+    },
+    "form1040": {
+      "7": 3000,
+      "15": 47250,
+      "11b": 63000
+    }
+  }
+}

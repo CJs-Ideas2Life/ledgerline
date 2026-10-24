@@ -1,0 +1,25 @@
+{
+  "id": "item-salt-phasedown",
+  "category": "itemized",
+  "description": "Single, AGI $550,000, $50,000 SALT — 30% phase-down.",
+  "derivation": "Worksheet: $40,000 − 30% × ($550,000 − $500,000) = $40,000 − $15,000 = $25,000 (Schedule A instr. p. 7).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 550000,
+        "federalWithholding": 140000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 550000,
+        "medicareTax": 11125
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 50000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "5e": 25000
+    }
+  }
+}

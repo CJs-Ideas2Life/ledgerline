@@ -1,0 +1,20 @@
+{
+  "id": "dependent-filer-earned",
+  "category": "seniors",
+  "description": "Dependent filer with $5,000 of wages — earned income + $450.",
+  "derivation": "Worksheet line 2: 5,000 + 450 = $5,450, under the $15,750 cap.",
+  "input": {
+    "canBeClaimedAsDependent": true,
+    "w2s": [
+      {
+        "wages": 5000,
+        "socialSecurityWages": 5000,
+        "medicareWages": 5000,
+        "medicareTax": 73
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 5450
+  }
+}

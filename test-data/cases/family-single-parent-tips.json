@@ -1,0 +1,37 @@
+{
+  "id": "family-single-parent-tips",
+  "category": "family",
+  "description": "HOH restaurant worker, one child, $28,000 wages including $6,000 qualified tips.",
+  "derivation": "Sch. 1-A tip deduction $6,000 (under cap, MAGI $28,000). Std $23,625. TI = 28,000 − 23,625 − 6,000 = $0? 28,000 − 23,625 = 4,375 − 6,000 → TI $0. CTC/ACTC and EIC still apply on earned income $28,000.",
+  "input": {
+    "filingStatus": "hoh",
+    "w2s": [
+      {
+        "wages": 28000,
+        "federalWithholding": 500,
+        "socialSecurityWages": 28000,
+        "socialSecurityTax": 1736,
+        "medicareWages": 28000,
+        "medicareTax": 406,
+        "qualifiedTips": 6000
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 0,
+      "16": 0,
+      "13b": 6000
+    },
+    "schedule1A": {
+      "13": 6000
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "phase-qbi-threshold-plus",
+  "category": "boundaries",
+  "description": "Single Schedule C, taxable income before QBI over the $197,300 Form 8995-A threshold.",
+  "derivation": "RP 2024-40 § 3.27 threshold $197,300. Profit $250,000. SE net 230,875; SS 12.4% × $176,100 = $21,836; Medicare 2.9% × 230,875 = $6,695; SE tax $28,531; half $14,266. AGI $235,734. Std $15,750. TI before QBI $219,984, which is above $197,300, so Form 8995-A applies. No W-2/UBIA, so the wage limit may reduce the deduction.",
+  "input": {
+    "businesses": [
+      {
+        "name": "Solo",
+        "grossReceipts": 250000,
+        "expenses": {
+          "otherExpenses": 0
+        }
+      }
+    ]
+  },
+  "expected": {
+    "form8995A": {
+      "15": "GT0"
+    },
+    "warningsIncludes": [
+      "Form 8995-A"
+    ]
+  }
+}

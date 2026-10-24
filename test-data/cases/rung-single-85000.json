@@ -1,0 +1,25 @@
+{
+  "id": "rung-single-85000",
+  "category": "wages",
+  "description": "Single W-2 of $85,000 — Tax Table rung.",
+  "derivation": "TI 69250. Table tax $10155. RP 2024-40 § 3.01 / i1040gi Tax Table.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 85000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 85000,
+        "socialSecurityTax": 5270,
+        "medicareWages": 85000,
+        "medicareTax": 1233
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 69250,
+      "16": 10155
+    },
+    "taxMethod": "table"
+  }
+}

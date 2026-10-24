@@ -1,0 +1,21 @@
+{
+  "id": "se-under-400",
+  "category": "self-employment",
+  "description": "Tiny profit $400 — net earnings $369, under the $400 SE threshold.",
+  "derivation": "Schedule SE line 4a = 400 × 92.35% = $369. Line 4c < $400 → no SE tax (Schedule SE 2025 line 4c / line 12).",
+  "input": {
+    "businesses": [
+      {
+        "grossReceipts": 400
+      }
+    ]
+  },
+  "expected": {
+    "schedule2": {
+      "4": 0
+    },
+    "schedule1": {
+      "15": 0
+    }
+  }
+}

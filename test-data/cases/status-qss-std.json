@@ -1,0 +1,23 @@
+{
+  "id": "status-qss-std",
+  "category": "filing-status",
+  "description": "Qualifying surviving spouse, no income.",
+  "derivation": "Form 1040 (2025) standard deduction QSS $31,500 (MFJ amount).",
+  "input": {
+    "filingStatus": "qss",
+    "dependents": [
+      {
+        "firstName": "Pat",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 31500,
+    "form1040": {
+      "15": 0,
+      "16": 0
+    }
+  }
+}

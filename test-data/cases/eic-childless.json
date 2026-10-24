@@ -1,0 +1,21 @@
+{
+  "id": "eic-childless",
+  "category": "credits",
+  "description": "Single, no children, $8,000 wages — childless EIC.",
+  "derivation": "EIC table $8,000–$8,050 row, midpoint $8,025 × 7.65% = $613.91 → $614 (G18; RP 2024-40 § 3.06). Formula-exact 7.65% × $8,000 = $612.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 8000,
+        "socialSecurityWages": 8000,
+        "medicareWages": 8000,
+        "medicareTax": 116
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "27a": 614
+    }
+  }
+}

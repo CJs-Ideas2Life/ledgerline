@@ -1,0 +1,23 @@
+{
+  "id": "inv-qd-0pct",
+  "category": "investments",
+  "description": "Single, $40,000 of qualified dividends and no other income — all inside the 0% CG band.",
+  "derivation": "QDCG worksheet (i1040gi p. 38): line 1 = TI = 40,000 − 15,750 = 24,250; line 4 = 40,000; line 5 = 0; line 6 = $48,350 (RP 2024-40 § 3.03). All preferential income is taxed at 0%. Tax $0.",
+  "input": {
+    "dividends": [
+      {
+        "payer": "Broker",
+        "ordinary": 40000,
+        "qualified": 40000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 24250,
+      "16": 0,
+      "3a": 40000
+    },
+    "taxMethod": "qdcg-worksheet"
+  }
+}

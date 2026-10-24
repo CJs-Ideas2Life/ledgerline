@@ -1,0 +1,36 @@
+{
+  "id": "g18-eic-table-band",
+  "category": "credits",
+  "description": "HOH, two EIC children, $30,049 wages — same EIC table row as $30,000 (G18).",
+  "derivation": "EIC table $30,000–$30,050 midpoint $30,025. Credit = $7,152 − 21.06% × ($30,025 − $23,350) = $7,152 − $1,406 = $5,746. Formula-exact at $30,000 would have been $5,752.",
+  "input": {
+    "filingStatus": "hoh",
+    "w2s": [
+      {
+        "wages": 30049,
+        "federalWithholding": 1000,
+        "socialSecurityWages": 30049,
+        "socialSecurityTax": 1863,
+        "medicareWages": 30049,
+        "medicareTax": 436
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "B",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "27a": 5746
+    }
+  }
+}

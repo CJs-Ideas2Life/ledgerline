@@ -1,0 +1,28 @@
+{
+  "id": "life-mfs-salt-half-edge",
+  "category": "itemized",
+  "description": "MFS, AGI $80,000, $22,000 SALT — MFS cap $20,000.",
+  "derivation": "AGI under $250,000 so no phase-down. MFS cap $20,000. Sch. A line 5e.",
+  "input": {
+    "filingStatus": "mfs",
+    "w2s": [
+      {
+        "wages": 80000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 80000,
+        "socialSecurityTax": 4960,
+        "medicareWages": 80000,
+        "medicareTax": 1160
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 22000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "5d": 22000,
+      "5e": 20000
+    }
+  }
+}

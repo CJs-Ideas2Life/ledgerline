@@ -1,0 +1,32 @@
+{
+  "id": "inv-tax-exempt",
+  "category": "investments",
+  "description": "Municipal-bond interest $2,000 reported on line 2a, not 2b.",
+  "derivation": "Form 1040 line 2a is tax-exempt interest (1099-INT box 8). It is not in AGI. Line 2b = $0. TI = 40,000 − 15,750 = $24,250.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 40000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 40000,
+        "medicareWages": 40000,
+        "medicareTax": 580
+      }
+    ],
+    "interest": [
+      {
+        "payer": "Muni",
+        "taxable": 0,
+        "taxExempt": 2000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 24250,
+      "2a": 2000,
+      "2b": 0,
+      "11b": 40000
+    }
+  }
+}

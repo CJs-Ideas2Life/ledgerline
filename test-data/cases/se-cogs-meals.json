@@ -1,0 +1,37 @@
+{
+  "id": "se-cogs-meals",
+  "category": "self-employment",
+  "description": "Retailer with inventory, COGS, and $1,001 of meals (50% deductible).",
+  "derivation": "COGS = 5,000 + 20,000 + 3,000 + 1,000 + 500 − 4,500 = $25,000 (Sch. C lines 35–42). Meals 1,001 × 50% = $500.50 → $501 (§ 274(n); 2025 Sch. C instr. line 24b). Net profit $70,549 after $1,200 home office.",
+  "input": {
+    "businesses": [
+      {
+        "name": "Shop",
+        "grossReceipts": 100000,
+        "returnsAllowances": 2000,
+        "otherIncome": 250,
+        "hasInventory": true,
+        "cogs": {
+          "beginningInventory": 5000,
+          "purchases": 20000,
+          "costOfLabor": 3000,
+          "materialsSupplies": 1000,
+          "otherCosts": 500,
+          "endingInventory": 4500
+        },
+        "expenses": {
+          "mealsTotal": 1001,
+          "advertising": 1000
+        },
+        "homeOffice": 1200
+      }
+    ]
+  },
+  "expected": {
+    "scheduleC.0.lines": {
+      "31": 70549,
+      "42": 25000,
+      "24b": 501
+    }
+  }
+}

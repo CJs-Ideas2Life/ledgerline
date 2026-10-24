@@ -1,0 +1,24 @@
+{
+  "id": "phase-tips-at",
+  "category": "boundaries",
+  "description": "Single, $10,000 qualified tips, MAGI $150,000 — no tip phase-out.",
+  "derivation": "1-A line 9 start $150,000; excess 0; line 13 = min($10,000, $25,000). OBBBA § 70201.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 150000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 150000,
+        "socialSecurityTax": 9300,
+        "medicareWages": 150000,
+        "medicareTax": 2175,
+        "qualifiedTips": 10000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "13": 10000
+    }
+  }
+}

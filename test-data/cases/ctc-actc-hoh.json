@@ -1,0 +1,40 @@
+{
+  "id": "ctc-actc-hoh",
+  "category": "credits",
+  "description": "HOH, two children, $30,000 wages — nonrefundable CTC plus $3,400 ACTC and EIC.",
+  "derivation": "Std $23,625. TI $6,375 → Tax Table $638. Nonrefundable CTC $638. ACTC = min(unused, 2 × $1,700, 15% × $27,500) = $3,400 (Sch. 8812 Part II-A). EIC table (2 children): $30,000–$30,050 midpoint $30,025 → $7,152 − 21.06% × $6,675 = $7,152 − $1,406 = $5,746.",
+  "input": {
+    "filingStatus": "hoh",
+    "w2s": [
+      {
+        "wages": 30000,
+        "federalWithholding": 1000,
+        "socialSecurityWages": 30000,
+        "socialSecurityTax": 1860,
+        "medicareWages": 30000,
+        "medicareTax": 435
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "A",
+        "under17": true,
+        "eicQualifying": true
+      },
+      {
+        "firstName": "B",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "16": 638,
+      "19": 638,
+      "28": 3400,
+      "27a": 5746
+    },
+    "refund": 10146
+  }
+}

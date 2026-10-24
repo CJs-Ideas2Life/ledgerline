@@ -1,0 +1,27 @@
+{
+  "id": "s1a-tips",
+  "category": "schedule-1a",
+  "description": "Server with $40,000 wages including $8,000 of qualified tips.",
+  "derivation": "Sch. 1-A Part II: qualified tips $8,000 ≤ $25,000 cap; MAGI $40,000 ≤ $150,000 → full $8,000 deduction (lines 7, 13). TI = 40,000 − 15,750 − 8,000 = $16,250.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 40000,
+        "federalWithholding": 2000,
+        "socialSecurityWages": 40000,
+        "medicareWages": 40000,
+        "medicareTax": 580,
+        "qualifiedTips": 8000
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "13": 8000
+    },
+    "form1040": {
+      "15": 16250,
+      "13b": 8000
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "status-hoh-std",
+  "category": "filing-status",
+  "description": "Head of household, no income.",
+  "derivation": "Form 1040 (2025) standard deduction HOH $23,625.",
+  "input": {
+    "filingStatus": "hoh",
+    "dependents": [
+      {
+        "firstName": "Pat",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 23625,
+    "form1040": {
+      "15": 0,
+      "16": 0
+    }
+  }
+}

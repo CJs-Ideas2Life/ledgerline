@@ -1,0 +1,30 @@
+{
+  "id": "qbi-below-threshold",
+  "category": "qbi",
+  "description": "Single, $20,000 Schedule C profit plus $10,000 of qualified dividends — QBI limited by 20% of ordinary TI.",
+  "derivation": "SE tax $2,826, deduction $1,413. AGI = 20,000 + 10,000 − 1,413 = $28,587. Form 8995 line 11 = 28,587 − 15,750 = $12,837; line 13 = $2,837; line 14 = $567. QBI component 18,587 × 20% = $3,717. Deduction = $567 (Form 8995 lines 5/14/15).",
+  "input": {
+    "businesses": [
+      {
+        "grossReceipts": 20000
+      }
+    ],
+    "dividends": [
+      {
+        "ordinary": 10000,
+        "qualified": 10000
+      }
+    ]
+  },
+  "expected": {
+    "form8995": {
+      "5": 3717,
+      "11": 12837,
+      "14": 567,
+      "15": 567
+    },
+    "form1040": {
+      "13a": 567
+    }
+  }
+}

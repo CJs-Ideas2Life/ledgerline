@@ -1,0 +1,27 @@
+{
+  "id": "senior-single-65",
+  "category": "seniors",
+  "description": "Single, born before January 2, 1961, $50,000 wages.",
+  "derivation": "Additional standard deduction $2,000 (RP 2024-40 § 3.15(3); i1040gi p. 35) → std $17,750. Enhanced senior deduction $6,000 (Sch. 1-A Part V; MAGI under $75,000). TI = 50,000 − 17,750 − 6,000 = $26,250.",
+  "input": {
+    "taxpayer": {
+      "bornBefore1961": true
+    },
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 17750,
+    "form1040": {
+      "15": 26250,
+      "13b": 6000
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "phase-senior-at",
+  "category": "boundaries",
+  "description": "Single age 65+, MAGI $75,000 — full $6,000 senior deduction.",
+  "derivation": "Schedule 1-A line 32 start $75,000; excess 0; line 35 = $6,000. OBBBA § 70103.",
+  "input": {
+    "taxpayer": {
+      "bornBefore1961": true,
+      "hasValidSSN": true
+    },
+    "w2s": [
+      {
+        "wages": 75000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 75000,
+        "socialSecurityTax": 4650,
+        "medicareWages": 75000,
+        "medicareTax": 1088
+      }
+    ]
+  },
+  "expected": {
+    "schedule1A": {
+      "37": 6000
+    },
+    "form1040": {
+      "13b": 6000
+    }
+  }
+}

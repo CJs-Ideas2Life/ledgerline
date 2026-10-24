@@ -1,0 +1,23 @@
+{
+  "id": "bound-tax-table-top",
+  "category": "boundaries",
+  "description": "Taxable income $99,999 — last Tax Table row; $100,000 would switch methods.",
+  "derivation": "i1040gi line 16: taxable income under $100,000 must use the Tax Table. $100,000 uses the Tax Computation Worksheet. Here wages $115,749 − $15,750 = $99,999.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 115749,
+        "federalWithholding": 20000,
+        "socialSecurityWages": 115749,
+        "medicareWages": 115749,
+        "medicareTax": 1678
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 99999
+    },
+    "taxMethod": "table"
+  }
+}

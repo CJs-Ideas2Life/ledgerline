@@ -1,0 +1,34 @@
+{
+  "id": "life-qss-widow",
+  "category": "filing-status",
+  "description": "Qualifying surviving spouse with one child and $90,000 wages.",
+  "derivation": "QSS uses MFJ std $31,500 and MFJ brackets. TI 58,500. Tax $6546. CTC $2,200.",
+  "input": {
+    "filingStatus": "qss",
+    "dependents": [
+      {
+        "firstName": "Sam",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 90000,
+        "federalWithholding": 9000,
+        "socialSecurityWages": 90000,
+        "socialSecurityTax": 5580,
+        "medicareWages": 90000,
+        "medicareTax": 1305
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 31500,
+    "form1040": {
+      "15": 58500,
+      "16": 6546,
+      "19": 2200
+    }
+  }
+}

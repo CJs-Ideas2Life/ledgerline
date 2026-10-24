@@ -1,0 +1,36 @@
+{
+  "id": "family-retired-couple",
+  "category": "family",
+  "description": "MFJ, both 65+, $40,000 qualified dividends and $8,000 taxable interest, no wages.",
+  "derivation": "Std $31,500 + $1,600 + $1,600 = $34,700. Senior deduction $12,000 (MAGI $48,000 ≤ $150,000). TI = 48,000 − 34,700 − 12,000 = $1,300, all preferential after ordinary $8,000 is absorbed by deductions — QDCG applies. No EIC (age 65+ and MAGI).",
+  "input": {
+    "filingStatus": "mfj",
+    "taxpayer": {
+      "bornBefore1961": true
+    },
+    "spouse": {
+      "bornBefore1961": true
+    },
+    "interest": [
+      {
+        "payer": "Bank",
+        "taxable": 8000
+      }
+    ],
+    "dividends": [
+      {
+        "payer": "Broker",
+        "ordinary": 40000,
+        "qualified": 40000
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 34700,
+    "form1040": {
+      "15": 1300,
+      "13b": 12000
+    },
+    "taxMethod": "qdcg-worksheet"
+  }
+}

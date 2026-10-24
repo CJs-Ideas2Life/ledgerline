@@ -1,0 +1,25 @@
+{
+  "id": "bound-10-12-single-at",
+  "category": "boundaries",
+  "description": "Single filer, taxable income 11925 (bracket edge 11925 at).",
+  "derivation": "Wages 27675 − std 15,750 = TI 11925. Tax Table tax $1193. RP 2024-40 § 3.01 single schedule.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 27675,
+        "federalWithholding": 0,
+        "socialSecurityWages": 27675,
+        "socialSecurityTax": 1716,
+        "medicareWages": 27675,
+        "medicareTax": 401
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 11925,
+      "16": 1193
+    },
+    "taxMethod": "table"
+  }
+}

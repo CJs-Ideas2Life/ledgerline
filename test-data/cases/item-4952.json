@@ -1,0 +1,36 @@
+{
+  "id": "item-4952",
+  "category": "itemized",
+  "description": "Investment interest $5,000, taxable interest income $1,200 — Form 4952 limit.",
+  "derivation": "Form 4952: net investment income = $1,200 (qualified dividends and LTCG excluded; no line-4g election). Deductible $1,200; carryover $3,800.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 80000,
+        "federalWithholding": 10000,
+        "socialSecurityWages": 80000,
+        "medicareWages": 80000,
+        "medicareTax": 1160
+      }
+    ],
+    "interest": [
+      {
+        "payer": "Bank",
+        "taxable": 1200
+      }
+    ],
+    "itemized": {
+      "investmentInterest": 5000,
+      "mortgageInterest1098": 20000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "9": 1200
+    },
+    "form4952": {
+      "8": 1200
+    },
+    "investmentInterestCarryoverToNextYear": 3800
+  }
+}

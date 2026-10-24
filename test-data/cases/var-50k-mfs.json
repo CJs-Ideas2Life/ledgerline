@@ -1,0 +1,29 @@
+{
+  "id": "var-50k-mfs",
+  "category": "variants",
+  "description": "Same $50,000 W-2 facts filed as mfs. Metamorphic filing-status variant.",
+  "derivation": "Std 15750 (Form 1040 2025). TI = 50,000 − 15750 = 34250. Tax Table midpoint → $3875 (RP 2024-40 § 3.01).",
+  "input": {
+    "filingStatus": "mfs",
+    "dependents": [],
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 50000,
+        "socialSecurityTax": 3100,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 15750,
+    "form1040": {
+      "15": 34250,
+      "16": 3875,
+      "1z": 50000
+    },
+    "taxMethod": "table"
+  }
+}

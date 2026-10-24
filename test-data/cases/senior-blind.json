@@ -1,0 +1,15 @@
+{
+  "id": "senior-blind",
+  "category": "seniors",
+  "description": "Single, 65 and blind.",
+  "derivation": "Two additional-standard-deduction boxes × $2,000 = $4,000. Std = 15,750 + 4,000 = $19,750.",
+  "input": {
+    "taxpayer": {
+      "bornBefore1961": true,
+      "blind": true
+    }
+  },
+  "expected": {
+    "standardDeduction": 19750
+  }
+}

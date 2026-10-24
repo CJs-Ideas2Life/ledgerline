@@ -1,0 +1,29 @@
+{
+  "id": "life-single-capgain-only",
+  "category": "investments",
+  "description": "Single, no wages, $12,000 long-term stock gain (bought 2020, sold 2025).",
+  "derivation": "Std 15,750 > 12,000 gain so TI 0 after standard deduction. QDCG still runs? Gain is on 1040 line 7. AGI 12,000. Std 15,750. TI 0. Tax 0. Preferential gain is unused because TI is 0.",
+  "input": {
+    "capitalGains": [
+      {
+        "description": "Index fund",
+        "dateAcquired": "2020-03-01",
+        "dateSold": "2025-06-01",
+        "proceeds": 20000,
+        "cost": 8000,
+        "term": "long"
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "7": 12000,
+      "15": 0,
+      "16": 0
+    },
+    "scheduleD": {
+      "16": 12000,
+      "21": 12000
+    }
+  }
+}

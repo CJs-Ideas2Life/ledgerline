@@ -1,0 +1,28 @@
+{
+  "id": "qbi-at-mfj-threshold",
+  "category": "qbi",
+  "description": "MFJ wages $250,000 plus $100,000 profit — still under the $394,600 Form 8995 threshold.",
+  "derivation": "Form 8995 (2025) header / RP 2024-40 § 3.27: MFJ threshold $394,600. Line 11 is under that amount, so the simplified 20% deduction applies (no W-2/UBIA limit).",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "wages": 250000,
+        "federalWithholding": 50000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 250000,
+        "medicareTax": 4075
+      }
+    ],
+    "businesses": [
+      {
+        "grossReceipts": 100000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "13a": "GT0"
+    }
+  }
+}

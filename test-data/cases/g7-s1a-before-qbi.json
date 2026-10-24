@@ -1,0 +1,26 @@
+{
+  "id": "g7-s1a-before-qbi",
+  "category": "qbi",
+  "description": "Single Schedule C plus $25,000 qualified tips — Schedule 1-A lowers taxable income before the QBI 20% cap (G7).",
+  "derivation": "Profit $80,000. SE deduction = half of SE tax on 92.35% × 80,000. AGI is not reduced by tips (below-the-line). Line 13b = $25,000. Form 8995 line 11 taxable income before QBI = AGI − std $15,750 − 13b, so the 20% TI cap is $5,000 smaller than it would be without Schedule 1-A.",
+  "input": {
+    "businesses": [
+      {
+        "name": "Tip trade",
+        "grossReceipts": 80000,
+        "qualifiedTips": 25000
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "13b": 25000
+    },
+    "schedule1A": {
+      "13": 25000
+    },
+    "form8995": {
+      "15": "GT0"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "schd-loss-limit",
+  "category": "schedule-d",
+  "description": "Net long-term capital loss of $9,000 — $3,000 allowed, $6,000 carries forward.",
+  "derivation": "§ 1211(b) / Schedule D (2025) line 21: net loss limited to $3,000 ($1,500 MFS). Carryover worksheet: unused $6,000 is long-term.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 5000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ],
+    "capitalGains": [
+      {
+        "description": "Loss",
+        "term": "long",
+        "proceeds": 1000,
+        "cost": 10000
+      }
+    ]
+  },
+  "expected": {
+    "scheduleD": {
+      "16": -9000,
+      "21": -3000
+    },
+    "form1040": {
+      "7": -3000,
+      "9": 47000
+    }
+  }
+}

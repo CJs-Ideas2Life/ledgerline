@@ -1,0 +1,27 @@
+{
+  "id": "item-charity-60pct",
+  "category": "itemized",
+  "description": "Cash gifts $40,000 on AGI $50,000 — 60% AGI limit, $10,000 carryover.",
+  "derivation": "§ 170(b)(1)(G) / Pub. 526: cash to a 50%-limit charity is capped at 60% of AGI = $30,000. Unused $10,000 carries forward up to five years.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ],
+    "itemized": {
+      "charityCash": 40000
+    },
+    "forceItemize": true
+  },
+  "expected": {
+    "scheduleA": {
+      "11": 30000
+    },
+    "charityCarryoverToNextYear": 10000
+  }
+}

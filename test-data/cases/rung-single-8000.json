@@ -1,0 +1,24 @@
+{
+  "id": "rung-single-8000",
+  "category": "wages",
+  "description": "Single W-2 of $8,000 — standard deduction wipes taxable income.",
+  "derivation": "Std $15,750 ≥ wages, TI 0, tax 0. Form 1040 line 15.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 8000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 8000,
+        "socialSecurityTax": 496,
+        "medicareWages": 8000,
+        "medicareTax": 116
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 0,
+      "16": 0
+    }
+  }
+}

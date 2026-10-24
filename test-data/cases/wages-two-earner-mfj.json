@@ -1,0 +1,38 @@
+{
+  "id": "wages-two-earner-mfj",
+  "category": "wages",
+  "description": "Two-earner couple: taxpayer $60,000, spouse $40,000, MFJ.",
+  "derivation": "Line 1z = $100,000. Std $31,500. TI = $68,500. Tax Table row $68,500–$68,550 midpoint $68,525: $2,385 + 12% × (68,525 − 23,850) = $2,385 + $5,361 = $7,746. No EIC (phaseout complete $26,214 joint / 0 children).",
+  "input": {
+    "filingStatus": "mfj",
+    "w2s": [
+      {
+        "owner": "taxpayer",
+        "wages": 60000,
+        "federalWithholding": 5000,
+        "socialSecurityWages": 60000,
+        "socialSecurityTax": 3720,
+        "medicareWages": 60000,
+        "medicareTax": 870
+      },
+      {
+        "owner": "spouse",
+        "wages": 40000,
+        "federalWithholding": 3000,
+        "socialSecurityWages": 40000,
+        "socialSecurityTax": 2480,
+        "medicareWages": 40000,
+        "medicareTax": 580
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 68500,
+      "16": 7746,
+      "1z": 100000,
+      "27a": 0
+    },
+    "taxMethod": "table"
+  }
+}

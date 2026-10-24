@@ -1,0 +1,29 @@
+{
+  "id": "life-itemized-just-under",
+  "category": "itemized",
+  "description": "Same wages, itemized $20 under the standard deduction — standard wins.",
+  "derivation": "Mortgage $10,000 + SALT $5,730 = $15,730 < 15,750. Standard used. TI 64,250.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 80000,
+        "federalWithholding": 9000,
+        "socialSecurityWages": 80000,
+        "socialSecurityTax": 4960,
+        "medicareWages": 80000,
+        "medicareTax": 1160
+      }
+    ],
+    "itemized": {
+      "mortgageInterest1098": 10000,
+      "stateLocalIncomeOrSalesTax": 5730
+    }
+  },
+  "expected": {
+    "usesItemized": false,
+    "standardDeduction": 15750,
+    "form1040": {
+      "15": 64250
+    }
+  }
+}

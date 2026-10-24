@@ -1,0 +1,28 @@
+{
+  "id": "qbi-sstb-phase-in",
+  "category": "qbi",
+  "description": "SSTB consultant with $220,000 of W-2 wages and $40,000 profit — inside the 2025 phase-in range.",
+  "derivation": "½ SE tax $2,826. AGI $257,174. TI before QBI = 257,174 − 15,750 = $241,424, which is between $197,300 and $247,300. Applicable SSTB percentage = 1 − (241,424 − 197,300)/50,000 = 11.752%. A reduced (not zero) QBI deduction remains.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 220000,
+        "federalWithholding": 45000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 220000,
+        "medicareTax": 3370
+      }
+    ],
+    "businesses": [
+      {
+        "grossReceipts": 40000,
+        "isSstb": true
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "13a": "GT0"
+    }
+  }
+}

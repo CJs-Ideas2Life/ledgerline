@@ -1,0 +1,10 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+test-results/
+playwright-report/
+artifacts/
+docs/sources/*.pdf
+.dev-server.log
+.next-preview/

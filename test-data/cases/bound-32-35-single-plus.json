@@ -1,0 +1,25 @@
+{
+  "id": "bound-32-35-single-plus",
+  "category": "boundaries",
+  "description": "Single filer, taxable income 250526 (bracket edge 250525 plus).",
+  "derivation": "Wages 266276 − std 15,750 = TI 250526. Worksheet tax $57231. RP 2024-40 § 3.01 single schedule.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 266276,
+        "federalWithholding": 0,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 266276,
+        "medicareTax": 3861
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 250526,
+      "16": 57231
+    },
+    "taxMethod": "computation-worksheet"
+  }
+}

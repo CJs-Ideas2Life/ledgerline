@@ -1,0 +1,25 @@
+{
+  "id": "item-salt-floor",
+  "category": "itemized",
+  "description": "Single, AGI $800,000 — SALT phase-down floors at $10,000.",
+  "derivation": "40,000 − 30% × 300,000 = negative; larger of that or $10,000 = $10,000 (worksheet line 9).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 800000,
+        "federalWithholding": 220000,
+        "socialSecurityWages": 176100,
+        "medicareWages": 800000,
+        "medicareTax": 17000
+      }
+    ],
+    "itemized": {
+      "stateLocalIncomeOrSalesTax": 60000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "5e": 10000
+    }
+  }
+}

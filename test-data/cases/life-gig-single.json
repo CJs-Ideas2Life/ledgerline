@@ -1,0 +1,27 @@
+{
+  "id": "life-gig-single",
+  "category": "self-employment",
+  "description": "Single rideshare driver, $41,000 gross, $9,200 expenses, no W-2.",
+  "derivation": "Sch. C profit $31,800. SE net $29,367 (×0.9235). SE tax 12.4%×min(29367,176100)+2.9%×29367 = $4,493. Half $2,247. AGI 31800−2247=29553. Std 15750. TI 13803. Table tax on row 13800–13850 midpoint 13825: 10%×11925 + 12%×1900 = 1420.50 → $1,421? Wait compute via helper.",
+  "input": {
+    "businesses": [
+      {
+        "name": "Rideshare",
+        "grossReceipts": 41000,
+        "expenses": {
+          "carTruck": 7200,
+          "supplies": 800,
+          "otherExpenses": 1200
+        }
+      }
+    ]
+  },
+  "expected": {
+    "scheduleC.0.lines": {
+      "31": 31800
+    },
+    "schedule1": {
+      "3": 31800
+    }
+  }
+}

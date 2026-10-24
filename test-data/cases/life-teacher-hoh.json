@@ -1,0 +1,42 @@
+{
+  "id": "life-teacher-hoh",
+  "category": "family",
+  "description": "Head of household public-school teacher, one child, $62,000 W-2, $7,400 withheld, $400 charity.",
+  "derivation": "Std HOH $23,625. TI = 62,000 − 23,625 = 38,375. Tax Table tax $4265. CTC $2,200 limited by tax. EIC: 1 child, EI $62,000 is above completed phaseout $50,434 — no EIC.",
+  "input": {
+    "filingStatus": "hoh",
+    "taxpayer": {
+      "firstName": "Maya",
+      "lastName": "Chen"
+    },
+    "dependents": [
+      {
+        "firstName": "Leo",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ],
+    "w2s": [
+      {
+        "wages": 62000,
+        "federalWithholding": 7400,
+        "socialSecurityWages": 62000,
+        "socialSecurityTax": 3844,
+        "medicareWages": 62000,
+        "medicareTax": 899
+      }
+    ],
+    "itemized": {
+      "charityCash": 400
+    }
+  },
+  "expected": {
+    "standardDeduction": 23625,
+    "form1040": {
+      "15": 38375,
+      "16": 4265,
+      "27a": 0
+    },
+    "usesItemized": false
+  }
+}

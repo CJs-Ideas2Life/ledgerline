@@ -1,0 +1,30 @@
+{
+  "id": "wages-addnl-medicare",
+  "category": "wages",
+  "description": "Single, $250,000 Medicare wages — Additional Medicare Tax exactly at $50,000 over the threshold.",
+  "derivation": "Form 8959 (2025) line 5 threshold $200,000 single; line 7 = $50,000 × 0.9% = $450. Matching extra withholding on line 22 is also $450 and credits to 1040 line 25c.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 250000,
+        "federalWithholding": 50000,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 250000,
+        "medicareTax": 4075
+      }
+    ]
+  },
+  "expected": {
+    "form8959": {
+      "7": 450,
+      "22": 450
+    },
+    "form1040": {
+      "25c": 450
+    },
+    "schedule2": {
+      "11": 450
+    }
+  }
+}

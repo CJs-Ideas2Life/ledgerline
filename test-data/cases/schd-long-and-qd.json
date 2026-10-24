@@ -1,0 +1,43 @@
+{
+  "id": "schd-long-and-qd",
+  "category": "schedule-d",
+  "description": "Long-term gain $5,000 plus $2,000 qualified dividends — QDCG worksheet.",
+  "derivation": "Schedule D line 15 = $5,000; line 16 = $5,000. Preferential income for QDCG line 3/4 = 2,000 + 5,000 = $7,000. TI = 60,000 + 5,000 + 2,000 − 15,750 = $51,250.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 60000,
+        "federalWithholding": 7000,
+        "socialSecurityWages": 60000,
+        "medicareWages": 60000,
+        "medicareTax": 870
+      }
+    ],
+    "dividends": [
+      {
+        "payer": "Fund",
+        "ordinary": 2000,
+        "qualified": 2000
+      }
+    ],
+    "capitalGains": [
+      {
+        "description": "LT stock",
+        "term": "long",
+        "proceeds": 15000,
+        "cost": 10000
+      }
+    ]
+  },
+  "expected": {
+    "scheduleD": {
+      "15": 5000,
+      "16": 5000
+    },
+    "form1040": {
+      "7": 5000,
+      "15": 51250
+    },
+    "taxMethod": "qdcg-worksheet"
+  }
+}

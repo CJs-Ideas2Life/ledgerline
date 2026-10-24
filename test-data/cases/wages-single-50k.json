@@ -1,0 +1,32 @@
+{
+  "id": "wages-single-50k",
+  "category": "wages",
+  "description": "Single employee, one W-2 of $50,000, $6,000 withheld. Classic refund.",
+  "derivation": "TI = 50,000 − 15,750 = 34,250. Tax Table row $34,250–$34,300 midpoint $34,275: $1,192.50 + 12% × (34,275 − 11,925) = $3,874.50 → $3,875 (i1040gi Tax Table; RP 2024-40 § 3.01). Refund = 6,000 − 3,875 = $2,125. EIC completed-phaseout $19,104 (RP 2024-40 § 3.06) — no EIC.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 6000,
+        "socialSecurityWages": 50000,
+        "socialSecurityTax": 3100,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 34250,
+      "16": 3875,
+      "24": 3875,
+      "34": 2125,
+      "37": 0,
+      "1z": 50000,
+      "27a": 0
+    },
+    "taxMethod": "table",
+    "refund": 2125,
+    "amountOwed": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "pay-refund",
+  "category": "payments",
+  "description": "Single $50,000 / $6,000 withheld — refund (companion to wages-single-50k).",
+  "derivation": "See wages-single-50k. Line 34 = line 35a = $2,125. Line 37 = $0.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 6000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "refund": 2125,
+    "amountOwed": 0,
+    "form1040": {
+      "34": 2125,
+      "37": 0
+    }
+  }
+}

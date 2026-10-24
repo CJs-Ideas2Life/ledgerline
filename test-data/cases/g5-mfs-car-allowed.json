@@ -1,0 +1,34 @@
+{
+  "id": "g5-mfs-car-allowed",
+  "category": "schedule-1a",
+  "description": "MFS with tips, overtime, senior age, and car-loan interest — only the car-loan deduction survives (G5).",
+  "derivation": "Tips, overtime, and the senior deduction require MFJ if married. Car-loan interest has no joint-return rule; MFS uses the $100,000 threshold. MAGI $80,000 is under that start, so the $2,500 of interest is allowed in full.",
+  "input": {
+    "filingStatus": "mfs",
+    "taxpayer": {
+      "bornBefore1961": true
+    },
+    "w2s": [
+      {
+        "wages": 80000,
+        "federalWithholding": 12000,
+        "socialSecurityWages": 80000,
+        "socialSecurityTax": 4960,
+        "medicareWages": 80000,
+        "medicareTax": 1160,
+        "qualifiedTips": 4000,
+        "qualifiedOvertime": 1500
+      }
+    ],
+    "carLoanInterest": 2500
+  },
+  "expected": {
+    "schedule1A": {
+      "13": 0,
+      "21": 0,
+      "30": 2500,
+      "37": 0,
+      "38": 2500
+    }
+  }
+}

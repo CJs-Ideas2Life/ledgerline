@@ -1,0 +1,32 @@
+{
+  "id": "phase-ctc-other-over",
+  "category": "boundaries",
+  "description": "Single + 1 child, MAGI $200,001 — first $50 of CTC phase-out.",
+  "derivation": "Excess $1, rounded up to $1,000 × 5% = $50. Sch. 8812 lines 10–11.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 200001,
+        "federalWithholding": 0,
+        "socialSecurityWages": 176100,
+        "socialSecurityTax": 10918,
+        "medicareWages": 200001,
+        "medicareTax": 2900
+      }
+    ],
+    "dependents": [
+      {
+        "firstName": "Kid",
+        "under17": true,
+        "eicQualifying": true
+      }
+    ]
+  },
+  "expected": {
+    "schedule8812": {
+      "10": 1000,
+      "11": 50,
+      "12": 2150
+    }
+  }
+}

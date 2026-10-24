@@ -1,0 +1,29 @@
+{
+  "id": "amt-senior-addback",
+  "category": "amt",
+  "description": "Single senior with $50,000 wages — Form 6251 line 1b adds back the $6,000 senior deduction.",
+  "derivation": "Form 6251 (2025) What’s New / lines 1a–1b: the enhanced senior deduction is a personal-exemption-type addback (§ 56(b)(5)(D)). Line 1b = TI $26,250 + $6,000 = $32,250.",
+  "input": {
+    "taxpayer": {
+      "bornBefore1961": true
+    },
+    "w2s": [
+      {
+        "wages": 50000,
+        "federalWithholding": 4000,
+        "socialSecurityWages": 50000,
+        "medicareWages": 50000,
+        "medicareTax": 725
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 26250,
+      "13b": 6000
+    },
+    "form6251": {
+      "1b": 32250
+    }
+  }
+}

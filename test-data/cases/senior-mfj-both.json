@@ -1,0 +1,30 @@
+{
+  "id": "senior-mfj-both",
+  "category": "seniors",
+  "description": "MFJ, both 65+, AGI $100,000 — $12,000 senior deduction.",
+  "derivation": "Sch. 1-A lines 36a/36b: $6,000 each because MAGI $100,000 ≤ $150,000. Std = 31,500 + 2 × $1,600 = $34,700? Wait: only age boxes, not blind: 31,500 + 1,600 + 1,600 = $34,700. Actually additional is $1,600 per box if married (RP 2024-40 § 3.15(3)). 31,500 + 3,200 = $34,700.",
+  "input": {
+    "filingStatus": "mfj",
+    "taxpayer": {
+      "bornBefore1961": true
+    },
+    "spouse": {
+      "bornBefore1961": true
+    },
+    "w2s": [
+      {
+        "wages": 100000,
+        "federalWithholding": 10000,
+        "socialSecurityWages": 100000,
+        "medicareWages": 100000,
+        "medicareTax": 1450
+      }
+    ]
+  },
+  "expected": {
+    "standardDeduction": 34700,
+    "form1040": {
+      "13b": 12000
+    }
+  }
+}

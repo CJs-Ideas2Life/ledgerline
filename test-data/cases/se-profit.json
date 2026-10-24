@@ -1,0 +1,26 @@
+{
+  "id": "se-profit",
+  "category": "self-employment",
+  "description": "Single sole proprietor, $57,500 net profit, no wages.",
+  "derivation": "Schedule SE (2025): 57,500 × 92.35% = $53,101; SS 12.4% = $6,585; Medicare 2.9% = $1,540; SE tax $8,125; deduction $4,063. Matches the published Schedule SE arithmetic used in the Rivera sample (spouse’s studio).",
+  "input": {
+    "businesses": [
+      {
+        "name": "Studio",
+        "grossReceipts": 57500
+      }
+    ]
+  },
+  "expected": {
+    "scheduleSE.0.lines": {
+      "12": 8125,
+      "13": 4063
+    },
+    "schedule2": {
+      "4": 8125
+    },
+    "schedule1": {
+      "15": 4063
+    }
+  }
+}

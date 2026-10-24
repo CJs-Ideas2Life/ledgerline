@@ -1,0 +1,21 @@
+{
+  "id": "wages-zero-income",
+  "category": "wages",
+  "description": "Empty return: no wages, no withholding, no dependents.",
+  "derivation": "Every 1040 money line is $0. Engine must not produce NaN (Form 1040 lines 15/16/24/34/37).",
+  "input": {},
+  "expected": {
+    "form1040": {
+      "9": 0,
+      "15": 0,
+      "16": 0,
+      "24": 0,
+      "34": 0,
+      "37": 0,
+      "1z": 0,
+      "11b": 0
+    },
+    "refund": 0,
+    "amountOwed": 0
+  }
+}

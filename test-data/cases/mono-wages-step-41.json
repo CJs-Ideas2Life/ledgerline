@@ -1,0 +1,24 @@
+{
+  "id": "mono-wages-step-41",
+  "category": "boundaries",
+  "description": "Single $41,000 wages — companion to mono-wages-step-40-to-41.",
+  "derivation": "TI 25,250. Tax $2795, which is ≥ the $40,000 companion.",
+  "input": {
+    "w2s": [
+      {
+        "wages": 41000,
+        "federalWithholding": 0,
+        "socialSecurityWages": 41000,
+        "socialSecurityTax": 2542,
+        "medicareWages": 41000,
+        "medicareTax": 595
+      }
+    ]
+  },
+  "expected": {
+    "form1040": {
+      "15": 25250,
+      "16": 2795
+    }
+  }
+}

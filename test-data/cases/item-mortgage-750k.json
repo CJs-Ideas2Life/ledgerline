@@ -1,0 +1,26 @@
+{
+  "id": "item-mortgage-750k",
+  "category": "itemized",
+  "description": "Average acquisition debt $1,000,000, interest $30,000 — limited to the $750,000 cap.",
+  "derivation": "Pub. 936 / § 163(h)(3)(F): deductible interest = 30,000 × 750,000 / 1,000,000 = $22,500. Pre-15 Dec 2017 $1,000,000 grandfathering is not applied (documented simplification).",
+  "input": {
+    "w2s": [
+      {
+        "wages": 80000,
+        "federalWithholding": 10000,
+        "socialSecurityWages": 80000,
+        "medicareWages": 80000,
+        "medicareTax": 1160
+      }
+    ],
+    "itemized": {
+      "mortgageInterest1098": 30000,
+      "mortgageAverageBalance": 1000000
+    }
+  },
+  "expected": {
+    "scheduleA": {
+      "8e": 22500
+    }
+  }
+}
